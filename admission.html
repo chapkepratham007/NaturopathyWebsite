@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Admission Portal 2026 - Manohar Vasudha Foundation</title>
+    <meta name="description" content="Apply online for 1-Year Diploma in Yoga & Naturotherapy (MSBVE Course Code: 201208). Minimum S.S.C / 10th Pass Required. Limited 25 Seats Per Batch.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Yatra+One&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                            gold: '#d97706',
+                            accent: '#f59e0b'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        marathi: ['Yatra One', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-brand-900 text-amber-200 text-xs sm:text-sm py-2 px-4 font-medium flex justify-between items-center border-b border-brand-800">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <span class="bg-amber-500 text-brand-900 px-2 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider animate-pulse">Admissions Open 2026</span>
+                <span class="hidden md:inline text-slate-200" data-en="MSBVE Recognized 1-Year Course (Code: 201208) | Max 25 Students per Batch" data-mr="महाराष्ट्र शासन व MSBVE मान्यताप्राप्त १ वर्षाचा अभ्यासक्रम (कोड: २०१२०८) | फक्त २५ जागा">
+                    MSBVE Recognized 1-Year Course (Code: 201208) | Max 25 Students per Batch
+                </span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="tel:9987941559" class="hover:text-white transition-colors flex items-center gap-1">
+                    <i class="fa-solid fa-phone text-xs"></i> <span>9987941559</span>
+                </a>
+                <div class="h-3 w-px bg-brand-700"></div>
+                <button id="langToggleBtn" class="flex items-center gap-1.5 bg-brand-800 hover:bg-brand-700 text-white px-3 py-0.5 rounded-md text-xs transition border border-brand-600">
+                    <i class="fa-solid fa-language text-amber-400"></i>
+                    <span id="currentLangLabel">मराठी में देखें</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100" id="navbar">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-brand-700 to-brand-500 flex items-center justify-center text-white text-xl shadow-md ring-2 ring-brand-200">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+                <div>
+                    <h1 class="text-base sm:text-lg font-bold text-brand-900 leading-tight" data-en="Manohar Vasudha Foundation" data-mr="मनोहर वसुधा फाउंडेशन">Manohar Vasudha Foundation</h1>
+                    <p class="text-xs text-brand-600 font-medium" data-en="Naturopathy & Yoga Institute (MSBVE)" data-mr="निसर्गोपचार व योग संस्था (MSBVE मान्यताप्राप्त)">Naturopathy & Yoga Institute (MSBVE Approved)</p>
+                </div>
+            </a>
+
+            <div class="hidden lg:flex items-center gap-6 text-sm font-semibold text-slate-700">
+                <a href="index.html" class="hover:text-brand-600 transition-colors py-1" data-en="Home" data-mr="मुख्य पृष्ठ">Home</a>
+                <a href="about.html" class="hover:text-brand-600 transition-colors py-1" data-en="About Course" data-mr="अभ्यासक्रम माहिती">About Course</a>
+                <a href="syllabus.html" class="hover:text-brand-600 transition-colors py-1" data-en="Syllabus & Exam" data-mr="अभ्यासक्रम व परीक्षा">Syllabus & Exam</a>
+                <a href="acupressure.html" class="hover:text-brand-600 transition-colors py-1 flex items-center gap-1.5" data-en="Acupressure Guide" data-mr="ॲक्यूप्रेशर मार्गदर्शन">
+                    <i class="fa-solid fa-hand-holding-medical text-brand-500"></i> Acupressure Guide
+                </a>
+                <a href="videos.html" class="hover:text-brand-600 transition-colors py-1" data-en="Videos" data-mr="व्हिडीओ">Videos</a>
+                <a href="blog.html" class="hover:text-brand-600 transition-colors py-1" data-en="Health Blog" data-mr="आरोग्य लेख">Health Blog</a>
+                <a href="posters.html" class="hover:text-brand-600 transition-colors py-1" data-en="Posters" data-mr="पॅम्पलेट्स">Posters</a>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <a href="admission.html" class="bg-gradient-to-r from-red-600 to-brand-700 text-white font-extrabold px-5 py-2.5 rounded-full text-xs sm:text-sm shadow-md flex items-center gap-2 ring-2 ring-amber-300">
+                    <i class="fa-solid fa-graduation-cap text-amber-300"></i>
+                    <span data-en="Apply For Admission" data-mr="प्रवेशासाठी अर्ज करा">Apply For Admission</span>
+                </a>
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-slate-700 hover:text-brand-700 focus:outline-none">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3 font-medium text-slate-700 shadow-xl">
+            <a href="index.html" class="mobile-link block py-2 border-b border-slate-100 hover:text-brand-600" data-en="Home" data-mr="मुख्य पृष्ठ">Home</a>
+            <a href="about.html" class="mobile-link block py-2 border-b border-slate-100 hover:text-brand-600" data-en="About Course" data-mr="अभ्यासक्रम माहिती">About Course</a>
+            <a href="syllabus.html" class="mobile-link block py-2 border-b border-slate-100 hover:text-brand-600" data-en="Syllabus & Exam" data-mr="अभ्यासक्रम व परीक्षा">Syllabus & Exam</a>
+            <a href="acupressure.html" class="mobile-link block py-2 border-b border-slate-100 hover:text-brand-600" data-en="Acupressure Points Guide" data-mr="ॲक्यूप्रेशर point मार्गदर्शन">Acupressure Points Guide</a>
+            <a href="videos.html" class="mobile-link block py-2 border-b border-slate-100 hover:text-brand-600" data-en="Videos Gallery" data-mr="व्हिडीओ गॅलरी">Videos Gallery</a>
+            <a href="blog.html" class="mobile-link block py-2 border-b border-slate-100 hover:text-brand-600" data-en="Health Blog" data-mr="आरोग्य लेख">Health Blog</a>
+            <a href="posters.html" class="mobile-link block py-2 border-b border-slate-100 hover:text-brand-600" data-en="Official Pamphlets" data-mr="अधिकृत पॅम्पलेट्स">Official Pamphlets</a>
+            <a href="admission.html" class="mobile-link block py-2 text-brand-700 font-bold" data-en="Fill Admission Form" data-mr="प्रवेश अर्ज भरा">Fill Admission Form</a>
+        </div>
+    </nav>
+
+    <!-- HIGHLIGHTED URGENT ADMISSION BANNER BAR -->
+    <div class="bg-gradient-to-r from-red-600 via-amber-500 to-red-600 text-white shadow-lg border-b border-amber-300/40 relative overflow-hidden py-3 px-4 animate-banner-glow">
+        <div class="container mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+            <div class="flex items-center justify-center sm:justify-start gap-2.5 text-xs sm:text-sm font-extrabold tracking-wide">
+                <span class="bg-white text-red-600 px-2.5 py-0.5 rounded-full text-[11px] font-black uppercase shadow-md animate-bounce">
+                    ⚡ HURRY!
+                </span>
+                <span data-en="🔥 APPLY FAST! Limited Seats Available — Admissions Open Till 30th Sep Only!" data-mr="🔥 त्वरा करा! मर्यादित २५ जागा — ३० सप्टेंबरपर्यंतच प्रवेश अर्ज उघडे आहेत!">
+                    🔥 APPLY FAST! Limited Seats Available — Admissions Open Till 30th Sep Only!
+                </span>
+            </div>
+            <a href="#admission" class="bg-amber-300 hover:bg-amber-200 text-slate-950 font-black text-xs px-5 py-2 rounded-full shadow-lg transition-all transform hover:scale-105 flex items-center gap-1.5 animate-pulse uppercase tracking-wider whitespace-nowrap">
+                <i class="fa-solid fa-fire text-red-600"></i>
+                <span data-en="Apply For Admission Now" data-mr="आजच प्रवेश अर्ज भरा">Apply For Admission Now</span> &rarr;
+            </a>
+        </div>
+    </div>
+
+    <!-- PAGE HEADER -->
+    <section class="bg-gradient-to-b from-brand-900 to-brand-950 text-white py-12">
+        <div class="container mx-auto px-4 text-center max-w-3xl space-y-3">
+            <span class="text-amber-400 font-bold text-xs uppercase tracking-widest bg-brand-800 px-3 py-1 rounded-full border border-brand-700">Official MSBVE Online Portal 2026</span>
+            <h1 class="text-3xl sm:text-4xl font-extrabold" data-en="Fill Your Admission Application Form" data-mr="निसर्गोपचार व योग प्रवेश अर्ज भरा">Fill Your Admission Application Form</h1>
+            <p class="text-emerald-200 text-sm sm:text-base">
+                1-Year Diploma in Yoga & Naturotherapy (Course Code: 201208). Minimum Qualification: S.S.C / 10th Pass.
+            </p>
+        </div>
+    </section>
+
+    <!-- FORM SECTION -->
+    <section id="admission" class="py-16 bg-gradient-to-b from-brand-50 to-emerald-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-white rounded-3xl p-6 sm:p-10 shadow-2xl border border-brand-100 relative overflow-hidden">
+                
+                <!-- Eligibility Header Banner -->
+                <div class="bg-emerald-900 text-white p-4 rounded-2xl mb-8 flex items-center justify-between gap-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-amber-500 text-brand-950 font-bold flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-amber-300" data-en="Mandatory Entry Qualification Check" data-mr="पात्रता अट: इयत्ता १० वी (S.S.C) उत्तीर्ण">Mandatory Entry Qualification Check</h4>
+                            <p class="text-xs text-emerald-100" data-en="S.S.C (10th Standard Pass) from any recognized board is mandatory for admission." data-mr="कोणत्याही मान्यताप्राप्त मंडळातून १० वी उत्तीर्ण असणे आवश्यक आहे.">S.S.C (10th Standard Pass) from any recognized board is mandatory for admission.</p>
+                        </div>
+                    </div>
+                    <span class="hidden sm:inline-block bg-brand-800 text-amber-300 border border-amber-400 text-xs px-3 py-1 rounded-full font-bold">MSBVE Approved</span>
+                </div>
+
+                <!-- FORM START -->
+                <form id="admissionForm" class="space-y-6" novalidate>
+                    <!-- Form Step 1: Personal Details -->
+                    <div>
+                        <h3 class="text-lg font-bold text-brand-900 border-b border-slate-200 pb-2 mb-4 flex items-center gap-2">
+                            <span class="w-6 h-6 rounded-full bg-brand-600 text-white text-xs flex items-center justify-center font-bold">1</span>
+                            <span data-en="Personal Information" data-mr="वैयक्तिक माहिती">Personal Information</span>
+                        </h3>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1" for="fullName">
+                                    <span data-en="Student Full Name *" data-mr="विद्यार्थ्याचे संपूर्ण नाव *">Student Full Name *</span>
+                                </label>
+                                <input type="text" id="fullName" name="fullName" placeholder="e.g. Ramesh Vijay Patil" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 text-sm transition" required>
+                                <p class="error-msg text-red-500 text-[11px] mt-1 hidden" id="err-fullName">Please enter your full name.</p>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1" for="phone">
+                                    <span data-en="Mobile / WhatsApp Number *" data-mr="मोबाईल / व्हॉट्सॲप नंबर *">Mobile / WhatsApp Number *</span>
+                                </label>
+                                <input type="tel" id="phone" name="phone" placeholder="10-digit Mobile Number" maxlength="10" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 text-sm transition" required>
+                                <p class="error-msg text-red-500 text-[11px] mt-1 hidden" id="err-phone">Please enter a valid 10-digit mobile number.</p>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1" for="email">
+                                    <span data-en="Email Address *" data-mr="ईमेल आयडी *">Email Address *</span>
+                                </label>
+                                <input type="email" id="email" name="email" placeholder="name@example.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 text-sm transition" required>
+                                <p class="error-msg text-red-500 text-[11px] mt-1 hidden" id="err-email">Please enter a valid email address.</p>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1" for="dob">
+                                    <span data-en="Date of Birth *" data-mr="जन्म तारीख *">Date of Birth *</span>
+                                </label>
+                                <input type="date" id="dob" name="dob" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 text-sm transition" required>
+                                <p class="error-msg text-red-500 text-[11px] mt-1 hidden" id="err-dob">Please select your date of birth.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form Step 2: Educational Qualification & SSC Check -->
+                    <div>
+                        <h3 class="text-lg font-bold text-brand-900 border-b border-slate-200 pb-2 mb-4 flex items-center gap-2">
+                            <span class="w-6 h-6 rounded-full bg-brand-600 text-white text-xs flex items-center justify-center font-bold">2</span>
+                            <span data-en="Educational Qualification (MSBVE Eligibility)" data-mr="शैक्षणिक पात्रता (MSBVE अट)">Educational Qualification (MSBVE Eligibility)</span>
+                        </h3>
+
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1" for="qualification">
+                                    <span data-en="Highest Educational Qualification Passed *" data-mr="उच्चतम शैक्षणिक पात्रता *">Highest Educational Qualification Passed *</span>
+                                </label>
+                                <select id="qualification" name="qualification" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 text-sm transition bg-white" required>
+                                    <option value="">-- Select Highest Qualification --</option>
+                                    <option value="ssc">S.S.C Pass (10th Standard) - [Required Minimum]</option>
+                                    <option value="hsc">H.S.C Pass (12th Standard - Arts / Science / Commerce)</option>
+                                    <option value="graduate">Graduate Degree (BA / B.Com / B.Sc / BAMS / BHMS / Other)</option>
+                                    <option value="postgraduate">Post Graduate / Diploma</option>
+                                    <option value="below_10th">Below 10th Standard (Not Eligible)</option>
+                                </select>
+                                <p class="error-msg text-red-500 text-[11px] mt-1 hidden" id="err-qualification">Please select your qualification.</p>
+                            </div>
+
+                            <div class="bg-amber-50 p-4 rounded-xl border border-amber-200 flex items-start gap-3">
+                                <input type="checkbox" id="sscPassedCheck" name="sscPassedCheck" class="mt-1 w-4 h-4 text-brand-600 rounded border-amber-300 focus:ring-brand-500 cursor-pointer" required>
+                                <label for="sscPassedCheck" class="text-xs text-slate-800 font-medium cursor-pointer leading-relaxed">
+                                    <strong class="text-amber-800" data-en="I confirm that I have passed S.S.C (10th Standard) or above from a recognized board." data-mr="मी याद्वारे खात्री देतो की मी १० वी (S.S.C) किंवा त्यापेक्षा अधिक शिक्षण पूर्ण केले आहे.">
+                                        I confirm that I have passed S.S.C (10th Standard) or above from a recognized board.
+                                    </strong> (Mandatory MSBVE requirement).
+                                </label>
+                            </div>
+                            <p class="error-msg text-red-500 text-[11px] mt-1 hidden" id="err-sscPassedCheck">You must confirm that you are S.S.C (10th) passed to qualify for admission.</p>
+                        </div>
+                    </div>
+
+                    <!-- Form Step 3: Batch Preference & Address -->
+                    <div>
+                        <h3 class="text-lg font-bold text-brand-900 border-b border-slate-200 pb-2 mb-4 flex items-center gap-2">
+                            <span class="w-6 h-6 rounded-full bg-brand-600 text-white text-xs flex items-center justify-center font-bold">3</span>
+                            <span data-en="Batch Preference & Residence" data-mr="बॅच प्राधान्य व पत्ता">Batch Preference & Residence</span>
+                        </h3>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1" for="batchPref">
+                                    <span data-en="Preferred Learning Batch *" data-mr="इच्छुक बॅच वेळ *">Preferred Learning Batch *</span>
+                                </label>
+                                <select id="batchPref" name="batchPref" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 text-sm bg-white" required>
+                                    <option value="">-- Select Batch Timing --</option>
+                                    <option value="Morning Batch">Morning Batch (8:00 AM - 11:00 AM)</option>
+                                    <option value="Afternoon Batch">Afternoon Batch (12:00 PM - 3:00 PM)</option>
+                                    <option value="Evening Batch">Evening Batch (4:00 PM - 7:00 PM)</option>
+                                    <option value="Weekend Special">Weekend Special (Sat & Sun)</option>
+                                </select>
+                                <p class="error-msg text-red-500 text-[11px] mt-1 hidden" id="err-batchPref">Please select a preferred batch time.</p>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1" for="city">
+                                    <span data-en="City / Town / District *" data-mr="शहर / जिल्हा *">City / Town / District *</span>
+                                </label>
+                                <input type="text" id="city" name="city" placeholder="e.g. Mumbai / Pune / Satara" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 text-sm transition" required>
+                                <p class="error-msg text-red-500 text-[11px] mt-1 hidden" id="err-city">Please enter your city or district.</p>
+                            </div>
+
+                            <div class="sm:col-span-2">
+                                <label class="block text-xs font-bold text-slate-700 mb-1" for="address">
+                                    <span data-en="Full Residential Address *" data-mr="संपूर्ण निवासी पत्ता *">Full Residential Address *</span>
+                                </label>
+                                <textarea id="address" name="address" rows="2" placeholder="House No, Landmark, Area..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 text-sm transition" required></textarea>
+                                <p class="error-msg text-red-500 text-[11px] mt-1 hidden" id="err-address">Please enter your residential address.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form Step 4: Reason & Document Simulation -->
+                    <div>
+                        <h3 class="text-lg font-bold text-brand-900 border-b border-slate-200 pb-2 mb-4 flex items-center gap-2">
+                            <span class="w-6 h-6 rounded-full bg-brand-600 text-white text-xs flex items-center justify-center font-bold">4</span>
+                            <span data-en="Career Goal & Document Upload" data-mr="उद्दिष्ट व कागदपत्र अपलोड">Career Goal & Document Upload</span>
+                        </h3>
+
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1" for="purpose">
+                                    <span data-en="Why do you want to join this course?" data-mr="तुम्हाला हा कोर्स का करायचा आहे?">Why do you want to join this course?</span>
+                                </label>
+                                <select id="purpose" name="purpose" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 text-sm bg-white">
+                                    <option value="Start own Naturopathy Clinic">To Start My Own Naturopathy & Acupressure Center</option>
+                                    <option value="Job as Yoga Instructor / Therapist">To Get a Job as Yoga Instructor / Therapist in Hospital</option>
+                                    <option value="Self & Family Healthcare">To Learn Self & Family Natural Healing Techniques</option>
+                                    <option value="Skill Enhancement for Doctors">To Enhance Existing Medical / Healthcare Skillset</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">
+                                    <span data-en="Attach S.S.C / Educational Marksheet (Optional Demo)" data-mr="इ. १० वी गुणपत्रक जोडा (ऐच्छिक)">Attach S.S.C / Educational Marksheet (Optional Demo)</span>
+                                </label>
+                                <div class="border-2 border-dashed border-slate-300 hover:border-brand-500 p-4 rounded-xl text-center cursor-pointer transition bg-slate-50" id="dropZone">
+                                    <i class="fa-solid fa-cloud-arrow-up text-brand-600 text-2xl mb-1"></i>
+                                    <p class="text-xs text-slate-600 font-medium" id="fileStatusText">Click or Drag Marksheet Photo / PDF here</p>
+                                    <input type="file" id="marksheetFile" class="hidden" accept="image/*,.pdf">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Submission Error Summary Box -->
+                    <div id="formErrorSummary" class="hidden bg-red-50 border border-red-200 text-red-700 p-4 rounded-xl text-xs font-medium space-y-1">
+                        <p class="font-bold flex items-center gap-1.5"><i class="fa-solid fa-triangle-exclamation"></i> Please fix the errors highlighted above before submitting:</p>
+                        <ul id="errorList" class="list-disc list-inside space-y-0.5"></ul>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="pt-4">
+                        <button type="submit" id="submitAdmissionBtn" class="w-full bg-gradient-to-r from-red-600 via-brand-700 to-amber-600 hover:from-red-700 hover:to-amber-700 text-white font-extrabold py-4 px-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 text-base sm:text-lg flex items-center justify-center gap-3 group ring-4 ring-amber-300/40">
+                            <i class="fa-solid fa-paper-plane group-hover:translate-x-1 transition-transform"></i>
+                            <span data-en="Submit Application & Generate Official Receipt" data-mr="प्रवेश अर्ज सबमिट करा व पावती मिळवा">Submit Application & Generate Official Receipt</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- RECEIPT MODAL -->
+    <div id="receiptModal" class="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-sm hidden flex items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl border border-slate-200 relative animate-modal-pop my-8">
+            <button id="closeReceiptBtn" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 p-2 text-xl font-bold">&times;</button>
+
+            <div id="printableReceipt" class="space-y-6">
+                <div class="text-center border-b-2 border-brand-600 pb-4">
+                    <div class="inline-flex items-center justify-center w-12 h-12 bg-emerald-100 text-brand-700 rounded-full mb-2">
+                        <i class="fa-solid fa-circle-check text-2xl"></i>
+                    </div>
+                    <span class="bg-brand-600 text-white text-[10px] font-bold px-3 py-0.5 rounded-full uppercase tracking-wider block w-max mx-auto mb-1">Official Application Token</span>
+                    <h3 class="text-xl font-extrabold text-brand-900">MANOHAR VASUDHA FOUNDATION</h3>
+                    <p class="text-xs text-slate-600 font-semibold">Recognized by MSBVE, Govt. of Maharashtra | Course Code: 201208</p>
+                </div>
+
+                <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 space-y-3 text-xs">
+                    <div class="flex justify-between items-center border-b border-slate-200 pb-2">
+                        <span class="text-slate-500 font-medium">Application ID:</span>
+                        <span class="font-extrabold text-brand-800 text-sm" id="recAppId">MVF-2026-8921</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-slate-500 font-medium">Student Name:</span>
+                        <span class="font-bold text-slate-900" id="recName">-</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-slate-500 font-medium">Mobile Number:</span>
+                        <span class="font-bold text-slate-900" id="recPhone">-</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-slate-500 font-medium">Email:</span>
+                        <span class="font-bold text-slate-900" id="recEmail">-</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-slate-500 font-medium">Entry Qualification:</span>
+                        <span class="font-bold text-emerald-700" id="recQual">S.S.C (10th Standard) Passed</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-slate-500 font-medium">Selected Batch:</span>
+                        <span class="font-bold text-slate-900" id="recBatch">-</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-slate-500 font-medium">Course Duration:</span>
+                        <span class="font-bold text-slate-900">1 Year (Part-Time)</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-slate-500 font-medium">Application Status:</span>
+                        <span class="bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded border border-emerald-300">PROVISIONAL ADMISSION CONFIRMED</span>
+                    </div>
+                </div>
+
+                <div class="bg-amber-50 p-4 rounded-xl border border-amber-200 text-xs text-amber-900 space-y-1">
+                    <p class="font-bold flex items-center gap-1.5"><i class="fa-solid fa-triangle-exclamation text-amber-600"></i> Next Step for Seat Confirmation:</p>
+                    <p>Please present this application token along with 2 Passport Size Photos & S.S.C Marksheet copy to <strong>Yogesh Mahangade (Ph: 9987941559)</strong> before 30th September 2026.</p>
+                </div>
+            </div>
+
+            <div class="mt-6 flex flex-col sm:flex-row items-center gap-3">
+                <button id="printReceiptBtn" class="w-full sm:w-1/2 bg-slate-900 hover:bg-black text-white font-bold py-3 rounded-xl text-xs flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-print"></i> Print Application Receipt
+                </button>
+                <a id="recWhatsappBtn" href="#" target="_blank" class="w-full sm:w-1/2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded-xl text-xs flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-sm"></i> Confirm via WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-950 text-slate-300 pt-16 pb-8 border-t border-brand-800">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-brand-600 text-white flex items-center justify-center text-xl shadow-md">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-base">Manohar Vasudha Foundation</h3>
+                            <p class="text-xs text-emerald-400 font-medium">MSBVE Approved Institute</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Promoting natural health, yoga therapy, and acupressure education recognized by Govt. of Maharashtra.
+                    </p>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-bold text-white text-sm uppercase tracking-wider border-b border-brand-800 pb-2">Website Pages</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="index.html" class="hover:text-amber-400 transition">Home</a></li>
+                        <li><a href="about.html" class="hover:text-amber-400 transition">About Course</a></li>
+                        <li><a href="syllabus.html" class="hover:text-amber-400 transition">Syllabus & Exam</a></li>
+                        <li><a href="acupressure.html" class="hover:text-amber-400 transition">Acupressure Guide</a></li>
+                        <li><a href="videos.html" class="hover:text-amber-400 transition">Videos Gallery</a></li>
+                        <li><a href="blog.html" class="hover:text-amber-400 transition">Doctor's Health Blog</a></li>
+                        <li><a href="posters.html" class="hover:text-amber-400 transition">Official Flyers</a></li>
+                        <li><a href="admission.html" class="hover:text-amber-400 transition text-amber-300 font-bold">Online Admission Form</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-bold text-white text-sm uppercase tracking-wider border-b border-brand-800 pb-2">Contact Details</h4>
+                    <div class="space-y-2.5 text-xs">
+                        <p class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-user-tie text-amber-400 mt-0.5"></i>
+                            <span><strong>Contact Person:</strong> Yogesh Mahangade</span>
+                        </p>
+                        <p class="flex items-center gap-2.5">
+                            <i class="fa-solid fa-phone text-amber-400"></i>
+                            <a href="tel:9987941559" class="hover:text-white font-bold text-amber-300">9987941559</a>
+                        </p>
+                        <p class="flex items-center gap-2.5">
+                            <i class="fa-solid fa-certificate text-amber-400"></i>
+                            <span>MSBVE Course Code: 201208</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="font-bold text-white text-sm uppercase tracking-wider border-b border-brand-800 pb-2">WhatsApp Inquiry</h4>
+                    <a href="https://wa.me/919987941559?text=Hello%20Yogesh%20Mahangade%20Sir,%20I%20am%20interested%20in%20Naturopathy%20and%20Yoga%20Course%20Admission." target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-4 py-3 rounded-xl shadow-lg transition flex items-center justify-center gap-2 text-xs">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Chat on WhatsApp (9987941559)
+                    </a>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-brand-900 text-center text-xs text-slate-500">
+                <p>&copy; 2026 Manohar Vasudha Foundation. All Rights Reserved. MSBVE Approved (Code 201208)</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

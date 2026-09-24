@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor's Health Blog - Manohar Vasudha Foundation</title>
+    <meta name="description" content="Read insightful health & wellness articles written by experienced Ayurvedic Doctors at Manohar Vasudha Foundation.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Yatra+One&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                            gold: '#d97706',
+                            accent: '#f59e0b'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        marathi: ['Yatra One', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-brand-900 text-amber-200 text-xs sm:text-sm py-2 px-4 font-medium flex justify-between items-center border-b border-brand-800">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <span class="bg-amber-500 text-brand-900 px-2 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider animate-pulse">Admissions Open 2026</span>
+                <span class="hidden md:inline text-slate-200" data-en="MSBVE Recognized 1-Year Course (Code: 201208) | Max 25 Students per Batch" data-mr="महाराष्ट्र शासन व MSBVE मान्यताप्राप्त १ वर्षाचा अभ्यासक्रम (कोड: २०१२०८) | फक्त २५ जागा">
+                    MSBVE Recognized 1-Year Course (Code: 201208) | Max 25 Students per Batch
+                </span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="tel:9987941559" class="hover:text-white transition-colors flex items-center gap-1">
+                    <i class="fa-solid fa-phone text-xs"></i> <span>9987941559</span>
+                </a>
+                <div class="h-3 w-px bg-brand-700"></div>
+                <button id="langToggleBtn" class="flex items-center gap-1.5 bg-brand-800 hover:bg-brand-700 text-white px-3 py-0.5 rounded-md text-xs transition border border-brand-600">
+                    <i class="fa-solid fa-language text-amber-400"></i>
+                    <span id="currentLangLabel">मराठी में देखें</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100" id="navbar">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-brand-700 to-brand-500 flex items-center justify-center text-white text-xl shadow-md ring-2 ring-brand-200">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+                <div>
+                    <h1 class="text-base sm:text-lg font-bold text-brand-900 leading-tight" data-en="Manohar Vasudha Foundation" data-mr="मनोहर वसुधा फाउंडेशन">Manohar Vasudha Foundation</h1>
+                    <p class="text-xs text-brand-600 font-medium" data-en="Naturopathy & Yoga Institute (MSBVE)" data-mr="निसर्गोपचार व योग संस्था (MSBVE मान्यताप्राप्त)">Naturopathy & Yoga Institute (MSBVE Approved)</p>
+                </div>
+            </a>
+
+            <div class="hidden lg:flex items-center gap-6 text-sm font-semibold text-slate-700">
+                <a href="index.html" class="hover:text-brand-600 transition-colors py-1" data-en="Home" data-mr="मुख्य पृष्ठ">Home</a>
+                <a href="about.html" class="hover:text-brand-600 transition-colors py-1" data-en="About Course" data-mr="अभ्यासक्रम माहिती">About Course</a>
+                <a href="syllabus.html" class="hover:text-brand-600 transition-colors py-1" data-en="Syllabus & Exam" data-mr="अभ्यासक्रम व परीक्षा">Syllabus & Exam</a>
+                <a href="acupressure.html" class="hover:text-brand-600 transition-colors py-1 flex items-center gap-1.5" data-en="Acupressure Guide" data-mr="ॲक्यूप्रेशर मार्गदर्शन">
+                    <i class="fa-solid fa-hand-holding-medical text-brand-500"></i> Acupressure Guide
+                </a>
+                <a href="videos.html" class="hover:text-brand-600 transition-colors py-1" data-en="Videos" data-mr="व्हिडीओ">Videos</a>
+                <a href="blog.html" class="text-brand-600 font-bold border-b-2 border-brand-600 py-1" data-en="Health Blog" data-mr="आरोग्य लेख">Health Blog</a>
+                <a href="posters.html" class="hover:text-brand-600 transition-colors py-1" data-en="Posters" data-mr="पॅम्पलेट्स">Posters</a>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <a href="admission.html" class="bg-gradient-to-r from-brand-600 to-brand-700 hover:from-brand-700 hover:to-brand-800 text-white font-bold px-5 py-2.5 rounded-full text-xs sm:text-sm shadow-md hover:shadow-lg transition-all flex items-center gap-2">
+                    <i class="fa-solid fa-graduation-cap text-amber-300"></i>
+                    <span data-en="Apply For Admission" data-mr="प्रवेशासाठी अर्ज करा">Apply For Admission</span>
+                </a>
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-slate-700 hover:text-brand-700 focus:outline-none">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3 font-medium text-slate-700 shadow-xl">
+            <a href="index.html" class="mobile-link block py-2 border-b border-slate-100 hover:text-brand-600" data-en="Home" data-mr="मुख्य पृष्ठ">Home</a>
+            <a href="about.html" class="mobile-link block py-2 border-b border-slate-100 hover:text-brand-600" data-en="About Course" data-mr="अभ्यासक्रम माहिती">About Course</a>
+            <a href="syllabus.html" class="mobile-link block py-2 border-b border-slate-100 hover:text-brand-600" data-en="Syllabus & Exam" data-mr="अभ्यासक्रम व परीक्षा">Syllabus & Exam</a>
+            <a href="acupressure.html" class="mobile-link block py-2 border-b border-slate-100 hover:text-brand-600" data-en="Acupressure Points Guide" data-mr="ॲक्यूप्रेशर पॉइंट मार्गदर्शन">Acupressure Points Guide</a>
+            <a href="videos.html" class="mobile-link block py-2 border-b border-slate-100 hover:text-brand-600" data-en="Videos Gallery" data-mr="व्हिडीओ गॅलरी">Videos Gallery</a>
+            <a href="blog.html" class="mobile-link block py-2 border-b border-slate-100 text-brand-600 font-bold" data-en="Health Blog" data-mr="आरोग्य लेख">Health Blog</a>
+            <a href="posters.html" class="mobile-link block py-2 border-b border-slate-100 hover:text-brand-600" data-en="Official Pamphlets" data-mr="अधिकृत पॅम्पलेट्स">Official Pamphlets</a>
+            <a href="admission.html" class="mobile-link block py-2 text-brand-700 font-bold" data-en="Fill Admission Form" data-mr="प्रवेश अर्ज भरा">Fill Admission Form</a>
+        </div>
+    </nav>
+
+    <!-- HIGHLIGHTED URGENT ADMISSION BANNER BAR -->
+    <div class="bg-gradient-to-r from-red-600 via-amber-500 to-red-600 text-white shadow-lg border-b border-amber-300/40 relative overflow-hidden py-3 px-4 animate-banner-glow">
+        <div class="container mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+            <div class="flex items-center justify-center sm:justify-start gap-2.5 text-xs sm:text-sm font-extrabold tracking-wide">
+                <span class="bg-white text-red-600 px-2.5 py-0.5 rounded-full text-[11px] font-black uppercase shadow-md animate-bounce">
+                    ⚡ HURRY!
+                </span>
+                <span data-en="🔥 APPLY FAST! Limited Seats Available — Admissions Open Till 30th Sep Only!" data-mr="🔥 त्वरा करा! मर्यादित २५ जागा — ३० सप्टेंबरपर्यंतच प्रवेश अर्ज उघडे आहेत!">
+                    🔥 APPLY FAST! Limited Seats Available — Admissions Open Till 30th Sep Only!
+                </span>
+            </div>
+            <a href="admission.html" class="bg-amber-300 hover:bg-amber-200 text-slate-950 font-black text-xs px-5 py-2 rounded-full shadow-lg transition-all transform hover:scale-105 flex items-center gap-1.5 animate-pulse uppercase tracking-wider whitespace-nowrap">
+                <i class="fa-solid fa-fire text-red-600"></i>
+                <span data-en="Apply For Admission Now" data-mr="आजच प्रवेश अर्ज भरा">Apply For Admission Now</span> &rarr;
+            </a>
+        </div>
+    </div>
+
+    <!-- PAGE HEADER -->
+    <section class="bg-gradient-to-b from-brand-900 to-brand-950 text-white py-12">
+        <div class="container mx-auto px-4 text-center max-w-3xl space-y-3">
+            <span class="text-amber-400 font-bold text-xs uppercase tracking-widest bg-brand-800 px-3 py-1 rounded-full border border-brand-700">Doctor's Health Insights</span>
+            <h1 class="text-3xl sm:text-4xl font-extrabold" data-en="Natural Health & Wellness Blog" data-mr="आयुर्वेदाचार्य डॉक्टरांचे आरोग्य लेख">Natural Health & Wellness Blog</h1>
+            <p class="text-emerald-200 text-sm sm:text-base">
+                Read educational articles written by our Ayurvedic Doctor on Acupressure, Naturopathy & Holistic Careers.
+            </p>
+        </div>
+    </section>
+
+    <!-- BLOG CARDS GRID -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 space-y-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Article 1 -->
+                <article class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                    <div class="p-6 space-y-3">
+                        <div class="flex items-center gap-2 text-xs text-slate-500">
+                            <span class="bg-brand-100 text-brand-800 font-bold px-2.5 py-0.5 rounded-full">Acupressure</span>
+                            <span>• 5 Min Read</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 hover:text-brand-600 transition-colors cursor-pointer read-blog-btn" data-blog="1">
+                            5 Daily Acupressure Points Every Person Should Know
+                        </h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Discover how spending just 5 minutes a day pressing key points on your hands and feet can boost immunity, improve digestion, and reduce stress naturally.
+                        </p>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-slate-200 flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-user-doctor text-brand-600 text-sm"></i>
+                            <span class="text-xs font-semibold text-slate-700">Ayurvedic Doctor</span>
+                        </div>
+                        <button class="read-blog-btn text-xs font-bold text-brand-700 hover:text-brand-900 flex items-center gap-1" data-blog="1">
+                            <span>Read Article</span> &rarr;
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                    <div class="p-6 space-y-3">
+                        <div class="flex items-center gap-2 text-xs text-slate-500">
+                            <span class="bg-amber-100 text-amber-800 font-bold px-2.5 py-0.5 rounded-full">Naturopathy</span>
+                            <span>• 6 Min Read</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 hover:text-brand-600 transition-colors cursor-pointer read-blog-btn" data-blog="2">
+                            Panchmahabhuta: Healing Body with 5 Elements of Nature
+                        </h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Learn how Sun bath, Mud therapy, Hydrotherapy, and Air bath work in harmony to flush toxins and cure chronic diseases without drugs.
+                        </p>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-slate-200 flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-user-doctor text-brand-600 text-sm"></i>
+                            <span class="text-xs font-semibold text-slate-700">Ayurvedic Doctor</span>
+                        </div>
+                        <button class="read-blog-btn text-xs font-bold text-brand-700 hover:text-brand-900 flex items-center gap-1" data-blog="2">
+                            <span>Read Article</span> &rarr;
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                    <div class="p-6 space-y-3">
+                        <div class="flex items-center gap-2 text-xs text-slate-500">
+                            <span class="bg-emerald-100 text-emerald-800 font-bold px-2.5 py-0.5 rounded-full">Career</span>
+                            <span>• 4 Min Read</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 hover:text-brand-600 transition-colors cursor-pointer read-blog-btn" data-blog="3">
+                            Why Naturopathy & Yoga is the Fast-Growing Career in 2026
+                        </h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            With increasing demand for non-pharmacological treatment, certified naturopaths have tremendous opportunities in wellness centers and self-owned clinics.
+                        </p>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-slate-200 flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-user-doctor text-brand-600 text-sm"></i>
+                            <span class="text-xs font-semibold text-slate-700">Ayurvedic Doctor</span>
+                        </div>
+                        <button class="read-blog-btn text-xs font-bold text-brand-700 hover:text-brand-900 flex items-center gap-1" data-blog="3">
+                            <span>Read Article</span> &rarr;
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG READER MODAL -->
+    <div id="blogModal" class="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-sm hidden flex items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-white rounded-3xl max-w-3xl w-full p-6 sm:p-10 shadow-2xl border border-slate-200 relative my-8">
+            <button id="closeBlogBtn" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 p-2 text-xl font-bold">&times;</button>
+            <div id="blogContent" class="space-y-4 text-slate-800 text-sm leading-relaxed">
+                <!-- Populated dynamically by JS -->
+            </div>
+            <div class="mt-8 pt-6 border-t border-slate-200 flex justify-between items-center">
+                <span class="text-xs text-slate-500">Interested in learning Naturopathy?</span>
+                <a href="admission.html" id="blogCtaBtn" class="bg-brand-600 text-white font-bold px-4 py-2 rounded-xl text-xs">Apply for Course &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-950 text-slate-300 pt-16 pb-8 border-t border-brand-800">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-brand-600 text-white flex items-center justify-center text-xl shadow-md">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-base">Manohar Vasudha Foundation</h3>
+                            <p class="text-xs text-emerald-400 font-medium">MSBVE Approved Institute</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Promoting natural health, yoga therapy, and acupressure education recognized by Govt. of Maharashtra.
+                    </p>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-bold text-white text-sm uppercase tracking-wider border-b border-brand-800 pb-2">Website Pages</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="index.html" class="hover:text-amber-400 transition">Home</a></li>
+                        <li><a href="about.html" class="hover:text-amber-400 transition">About Course</a></li>
+                        <li><a href="syllabus.html" class="hover:text-amber-400 transition">Syllabus & Exam</a></li>
+                        <li><a href="acupressure.html" class="hover:text-amber-400 transition">Acupressure Guide</a></li>
+                        <li><a href="videos.html" class="hover:text-amber-400 transition">Videos Gallery</a></li>
+                        <li><a href="blog.html" class="hover:text-amber-400 transition text-amber-300 font-bold">Doctor's Health Blog</a></li>
+                        <li><a href="posters.html" class="hover:text-amber-400 transition">Official Flyers</a></li>
+                        <li><a href="admission.html" class="hover:text-amber-400 transition text-amber-300 font-bold">Online Admission Form</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-bold text-white text-sm uppercase tracking-wider border-b border-brand-800 pb-2">Contact Details</h4>
+                    <div class="space-y-2.5 text-xs">
+                        <p class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-user-tie text-amber-400 mt-0.5"></i>
+                            <span><strong>Contact Person:</strong> Yogesh Mahangade</span>
+                        </p>
+                        <p class="flex items-center gap-2.5">
+                            <i class="fa-solid fa-phone text-amber-400"></i>
+                            <a href="tel:9987941559" class="hover:text-white font-bold text-amber-300">9987941559</a>
+                        </p>
+                        <p class="flex items-center gap-2.5">
+                            <i class="fa-solid fa-certificate text-amber-400"></i>
+                            <span>MSBVE Course Code: 201208</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="font-bold text-white text-sm uppercase tracking-wider border-b border-brand-800 pb-2">WhatsApp Inquiry</h4>
+                    <a href="https://wa.me/919987941559?text=Hello%20Yogesh%20Mahangade%20Sir,%20I%20am%20interested%20in%20Naturopathy%20and%20Yoga%20Course%20Admission." target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-4 py-3 rounded-xl shadow-lg transition flex items-center justify-center gap-2 text-xs">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Chat on WhatsApp (9987941559)
+                    </a>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-brand-900 text-center text-xs text-slate-500">
+                <p>&copy; 2026 Manohar Vasudha Foundation. All Rights Reserved. MSBVE Approved (Code 201208)</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+/* Custom Styles & Animations for Manohar Vasudha Foundation Website */
+
+@keyframes bounceSlow {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes modalPop {
+    0% {
+        opacity: 0;
+        transform: scale(0.95) translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes bannerGlow {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+.animate-banner-glow {
+    background-size: 200% 200%;
+    animation: bannerGlow 4s ease infinite;
+}
+
+.animate-bounce-slow {
+    animation: bounceSlow 3.5s ease-in-out infinite;
+}
+
+.animate-modal-pop {
+    animation: modalPop 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #059669;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #047857;
+}
+
+/* Form Input Focus Ring */
+input:focus, select:focus, textarea:focus {
+    outline: none;
+}
+
+/* Acupressure Button Active State */
+.acu-btn.active {
+    background-color: rgba(4, 120, 87, 0.8) !important;
+    border-color: #f59e0b !important;
+    box-shadow: 0 4px 14px rgba(245, 158, 11, 0.3);
+}
+
+.acu-btn.active div > div:first-child {
+    background-color: #f59e0b !important;
+    color: #064e3b !important;
+}
+
+/* Dropzone Hover */
+#dropZone.dragover {
+    border-color: #10b981;
+    background-color: #ecfdf5;
+}
+
+/* Print Specific Styles */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    #receiptModal, #receiptModal * {
+        visibility: visible;
+    }
+    #receiptModal {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        background: white;
+    }
+    #closeReceiptBtn, #printReceiptBtn, #recWhatsappBtn {
+        display: none !important;
+    }
+}
