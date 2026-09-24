@@ -23,11 +23,13 @@
                         brand: {
                             50: '#f0fdf4',
                             100: '#dcfce7',
+                            200: '#bbf7d0',
                             500: '#10b981',
                             600: '#059669',
                             700: '#047857',
                             800: '#065f46',
                             900: '#064e3b',
+                            950: '#022c22',
                             gold: '#d97706',
                             accent: '#f59e0b'
                         }
@@ -44,22 +46,22 @@
 <body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
 
     <!-- Top Announcement Bar -->
-    <div class="bg-brand-900 text-amber-200 text-xs sm:text-sm py-2 px-4 font-medium flex justify-between items-center border-b border-brand-800">
+    <div class="bg-slate-900 text-amber-300 text-xs sm:text-sm py-2 px-4 font-bold flex justify-between items-center border-b border-slate-800">
         <div class="container mx-auto flex justify-between items-center">
             <div class="flex items-center gap-2">
-                <span class="bg-amber-500 text-brand-900 px-2 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider animate-pulse">Admissions Open 2026</span>
-                <span class="hidden md:inline text-slate-200" data-en="MSBVE Recognized 1-Year Course (Code: 201208) | Max 25 Students per Batch" data-mr="महाराष्ट्र शासन व MSBVE मान्यताप्राप्त १ वर्षाचा अभ्यासक्रम (कोड: २०१२०८) | फक्त २५ जागा">
+                <span class="bg-red-600 text-white px-2.5 py-0.5 rounded-full text-xs font-black uppercase tracking-wider animate-pulse">Admissions Open 2026</span>
+                <span class="hidden md:inline text-slate-100 font-semibold" data-en="MSBVE Recognized 1-Year Course (Code: 201208) | Max 25 Students per Batch" data-mr="महाराष्ट्र शासन व MSBVE मान्यताप्राप्त १ वर्षाचा अभ्यासक्रम (कोड: २०१२०८) | फक्त २५ जागा">
                     MSBVE Recognized 1-Year Course (Code: 201208) | Max 25 Students per Batch
                 </span>
             </div>
             <div class="flex items-center gap-4">
-                <a href="tel:9987941559" class="hover:text-white transition-colors flex items-center gap-1">
-                    <i class="fa-solid fa-phone text-xs"></i> <span>9987941559</span>
+                <a href="tel:9987941559" class="text-white hover:text-amber-300 transition-colors flex items-center gap-1 font-extrabold">
+                    <i class="fa-solid fa-phone text-xs text-amber-400"></i> <span>9987941559</span>
                 </a>
-                <div class="h-3 w-px bg-brand-700"></div>
+                <div class="h-3 w-px bg-slate-700"></div>
                 <!-- Language Toggle Button -->
-                <button id="langToggleBtn" class="flex items-center gap-1.5 bg-brand-800 hover:bg-brand-700 text-white px-3 py-0.5 rounded-md text-xs transition border border-brand-600">
-                    <i class="fa-solid fa-language text-amber-400"></i>
+                <button id="langToggleBtn" class="flex items-center gap-1.5 bg-brand-700 hover:bg-brand-600 text-white px-3 py-0.5 rounded-md text-xs font-bold transition border border-brand-500">
+                    <i class="fa-solid fa-language text-amber-300"></i>
                     <span id="currentLangLabel">मराठी में देखें</span>
                 </button>
             </div>
@@ -67,7 +69,7 @@
     </div>
 
     <!-- Main Navigation Bar -->
-    <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100 transition-all duration-300" id="navbar">
+    <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-md border-b border-slate-200" id="navbar">
         <div class="container mx-auto px-4 py-3 flex items-center justify-between">
             <!-- Brand Logo -->
             <a href="index.html" class="flex items-center gap-3">
@@ -75,63 +77,63 @@
                     <i class="fa-solid fa-leaf"></i>
                 </div>
                 <div>
-                    <h1 class="text-base sm:text-lg font-bold text-brand-900 leading-tight" data-en="Manohar Vasudha Foundation" data-mr="मनोहर वसुधा फाउंडेशन">Manohar Vasudha Foundation</h1>
-                    <p class="text-xs text-brand-600 font-medium" data-en="Naturopathy & Yoga Institute (MSBVE)" data-mr="निसर्गोपचार व योग संस्था (MSBVE मान्यताप्राप्त)">Naturopathy & Yoga Institute (MSBVE Approved)</p>
+                    <h1 class="text-base sm:text-lg font-bold text-slate-900 leading-tight" data-en="Manohar Vasudha Foundation" data-mr="मनोहर वसुधा फाउंडेशन">Manohar Vasudha Foundation</h1>
+                    <p class="text-xs text-brand-700 font-bold" data-en="Naturopathy & Yoga Institute (MSBVE Approved)" data-mr="निसर्गोपचार व योग संस्था (MSBVE मान्यताप्राप्त)">Naturopathy & Yoga Institute (MSBVE Approved)</p>
                 </div>
             </a>
 
             <!-- Desktop Nav Links -->
-            <div class="hidden lg:flex items-center gap-6 text-sm font-semibold text-slate-700">
-                <a href="index.html" class="text-brand-600 font-bold border-b-2 border-brand-600 py-1" data-en="Home" data-mr="मुख्य पृष्ठ">Home</a>
-                <a href="about.html" class="hover:text-brand-600 transition-colors py-1" data-en="About Course" data-mr="अभ्यासक्रम माहिती">About Course</a>
-                <a href="syllabus.html" class="hover:text-brand-600 transition-colors py-1" data-en="Syllabus & Exam" data-mr="अभ्यासक्रम व परीक्षा">Syllabus & Exam</a>
-                <a href="acupressure.html" class="hover:text-brand-600 transition-colors py-1 flex items-center gap-1.5" data-en="Acupressure Guide" data-mr="ॲक्यूप्रेशर मार्गदर्शन">
-                    <i class="fa-solid fa-hand-holding-medical text-brand-500"></i> Acupressure Guide
+            <div class="hidden lg:flex items-center gap-6 text-sm font-extrabold text-slate-800">
+                <a href="index.html" class="text-brand-700 font-black border-b-2 border-brand-600 py-1" data-en="Home" data-mr="मुख्य पृष्ठ">Home</a>
+                <a href="about.html" class="hover:text-brand-700 transition-colors py-1" data-en="About Course" data-mr="अभ्यासक्रम माहिती">About Course</a>
+                <a href="syllabus.html" class="hover:text-brand-700 transition-colors py-1" data-en="Syllabus & Exam" data-mr="अभ्यासक्रम व परीक्षा">Syllabus & Exam</a>
+                <a href="acupressure.html" class="hover:text-brand-700 transition-colors py-1 flex items-center gap-1.5" data-en="Acupressure Guide" data-mr="ॲक्यूप्रेशर मार्गदर्शन">
+                    <i class="fa-solid fa-hand-holding-medical text-brand-600"></i> Acupressure Guide
                 </a>
-                <a href="videos.html" class="hover:text-brand-600 transition-colors py-1" data-en="Videos" data-mr="व्हिडीओ">Videos</a>
-                <a href="blog.html" class="hover:text-brand-600 transition-colors py-1" data-en="Health Blog" data-mr="आरोग्य लेख">Health Blog</a>
-                <a href="posters.html" class="hover:text-brand-600 transition-colors py-1" data-en="Posters" data-mr="पॅम्पलेट्स">Posters</a>
+                <a href="videos.html" class="hover:text-brand-700 transition-colors py-1" data-en="Videos" data-mr="व्हिडीओ">Videos</a>
+                <a href="blog.html" class="hover:text-brand-700 transition-colors py-1" data-en="Health Blog" data-mr="आरोग्य लेख">Health Blog</a>
+                <a href="posters.html" class="hover:text-brand-700 transition-colors py-1" data-en="Posters" data-mr="पॅम्पलेट्स">Posters</a>
             </div>
 
             <!-- CTA & Mobile Menu Toggle -->
             <div class="flex items-center gap-3">
-                <a href="admission.html" class="bg-gradient-to-r from-brand-600 to-brand-700 hover:from-brand-700 hover:to-brand-800 text-white font-bold px-5 py-2.5 rounded-full text-xs sm:text-sm shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 flex items-center gap-2">
+                <a href="admission.html#admissionFormCard" class="bg-gradient-to-r from-red-600 via-brand-600 to-brand-700 hover:from-red-700 hover:to-brand-800 text-white font-extrabold px-5 py-2.5 rounded-full text-xs sm:text-sm shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5 flex items-center gap-2 ring-2 ring-amber-300">
                     <i class="fa-solid fa-graduation-cap text-amber-300"></i>
                     <span data-en="Apply For Admission" data-mr="प्रवेशासाठी अर्ज करा">Apply For Admission</span>
                 </a>
 
                 <!-- Mobile Hamburger Button -->
-                <button id="mobileMenuBtn" class="lg:hidden p-2 text-slate-700 hover:text-brand-700 focus:outline-none" aria-label="Toggle Menu">
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-slate-800 hover:text-brand-700 focus:outline-none" aria-label="Toggle Menu">
                     <i class="fa-solid fa-bars text-2xl"></i>
                 </button>
             </div>
         </div>
 
         <!-- Mobile Drawer Menu -->
-        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3 font-medium text-slate-700 shadow-xl">
-            <a href="index.html" class="mobile-link block py-2 border-b border-slate-100 text-brand-600 font-bold" data-en="Home" data-mr="मुख्य पृष्ठ">Home</a>
-            <a href="about.html" class="mobile-link block py-2 border-b border-slate-100 hover:text-brand-600" data-en="About Course" data-mr="अभ्यासक्रम माहिती">About Course</a>
-            <a href="syllabus.html" class="mobile-link block py-2 border-b border-slate-100 hover:text-brand-600" data-en="Syllabus & Exam" data-mr="अभ्यासक्रम व परीक्षा">Syllabus & Exam</a>
-            <a href="acupressure.html" class="mobile-link block py-2 border-b border-slate-100 hover:text-brand-600" data-en="Acupressure Points Guide" data-mr="ॲक्यूप्रेशर पॉइंट मार्गदर्शन">Acupressure Points Guide</a>
-            <a href="videos.html" class="mobile-link block py-2 border-b border-slate-100 hover:text-brand-600" data-en="Videos Gallery" data-mr="व्हिडीओ गॅलरी">Videos Gallery</a>
-            <a href="blog.html" class="mobile-link block py-2 border-b border-slate-100 hover:text-brand-600" data-en="Health Blog" data-mr="आरोग्य लेख">Health Blog</a>
-            <a href="posters.html" class="mobile-link block py-2 border-b border-slate-100 hover:text-brand-600" data-en="Official Pamphlets" data-mr="अधिकृत पॅम्पलेट्स">Official Pamphlets</a>
-            <a href="admission.html" class="mobile-link block py-2 text-brand-700 font-bold" data-en="Fill Admission Form" data-mr="प्रवेश अर्ज भरा">Fill Admission Form</a>
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3 font-bold text-slate-800 shadow-xl">
+            <a href="index.html" class="mobile-link block py-2 border-b border-slate-100 text-brand-700 font-black" data-en="Home" data-mr="मुख्य पृष्ठ">Home</a>
+            <a href="about.html" class="mobile-link block py-2 border-b border-slate-100 hover:text-brand-700" data-en="About Course" data-mr="अभ्यासक्रम माहिती">About Course</a>
+            <a href="syllabus.html" class="mobile-link block py-2 border-b border-slate-100 hover:text-brand-700" data-en="Syllabus & Exam" data-mr="अभ्यासक्रम व परीक्षा">Syllabus & Exam</a>
+            <a href="acupressure.html" class="mobile-link block py-2 border-b border-slate-100 hover:text-brand-700" data-en="Acupressure Points Guide" data-mr="ॲक्यूप्रेशर पॉइंट मार्गदर्शन">Acupressure Points Guide</a>
+            <a href="videos.html" class="mobile-link block py-2 border-b border-slate-100 hover:text-brand-700" data-en="Videos Gallery" data-mr="व्हिडीओ गॅलरी">Videos Gallery</a>
+            <a href="blog.html" class="mobile-link block py-2 border-b border-slate-100 hover:text-brand-700" data-en="Health Blog" data-mr="आरोग्य लेख">Health Blog</a>
+            <a href="posters.html" class="mobile-link block py-2 border-b border-slate-100 hover:text-brand-700" data-en="Official Pamphlets" data-mr="अधिकृत पॅम्पलेट्स">Official Pamphlets</a>
+            <a href="admission.html#admissionFormCard" class="mobile-link block py-2 text-red-600 font-black" data-en="Fill Admission Form" data-mr="प्रवेश अर्ज भरा">Fill Admission Form</a>
         </div>
     </nav>
 
-    <!-- HIGHLIGHTED ANIMATED URGENT ADMISSION BANNER BAR (HIGHLIGHTED IN USER SCREENSHOT) -->
-    <div class="bg-gradient-to-r from-red-600 via-amber-500 to-red-600 text-white shadow-lg border-b border-amber-300/40 relative overflow-hidden py-3 px-4 animate-banner-glow">
-        <div class="container mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
-            <div class="flex items-center justify-center sm:justify-start gap-2.5 text-xs sm:text-sm font-extrabold tracking-wide">
-                <span class="bg-white text-red-600 px-2.5 py-0.5 rounded-full text-[11px] font-black uppercase shadow-md animate-bounce">
+    <!-- HIGHLIGHTED ANIMATED URGENT ADMISSION BANNER BAR -->
+    <div class="bg-gradient-to-r from-red-600 via-amber-500 to-red-600 text-white shadow-md border-b border-amber-300/50 py-2.5 px-4 animate-banner-glow">
+        <div class="container mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center sm:justify-start gap-2 text-xs sm:text-sm font-extrabold tracking-wide">
+                <span class="bg-white text-red-600 px-2.5 py-0.5 rounded-full text-[11px] font-black uppercase shadow-sm animate-bounce">
                     ⚡ HURRY!
                 </span>
                 <span data-en="🔥 APPLY FAST! Limited Seats Available — Admissions Open Till 30th Sep Only!" data-mr="🔥 त्वरा करा! मर्यादित २५ जागा — ३० सप्टेंबरपर्यंतच प्रवेश अर्ज उघडे आहेत!">
                     🔥 APPLY FAST! Limited Seats Available — Admissions Open Till 30th Sep Only!
                 </span>
             </div>
-            <a href="admission.html" class="bg-amber-300 hover:bg-amber-200 text-slate-950 font-black text-xs px-5 py-2 rounded-full shadow-lg transition-all transform hover:scale-105 flex items-center gap-1.5 animate-pulse uppercase tracking-wider whitespace-nowrap">
+            <a href="admission.html#admissionFormCard" class="bg-amber-300 hover:bg-amber-200 text-slate-950 font-black text-xs px-5 py-1.5 rounded-full shadow-md transition-all transform hover:scale-105 flex items-center gap-1.5 animate-pulse uppercase tracking-wider whitespace-nowrap">
                 <i class="fa-solid fa-fire text-red-600"></i>
                 <span data-en="Apply For Admission Now" data-mr="आजच प्रवेश अर्ज भरा">Apply For Admission Now</span> &rarr;
             </a>
@@ -139,16 +141,12 @@
     </div>
 
     <!-- HERO SECTION -->
-    <section id="home" class="relative overflow-hidden bg-gradient-to-b from-brand-50 via-emerald-50/50 to-white py-12 lg:py-16 border-b border-slate-100">
-        <!-- Background Decorative Elements -->
-        <div class="absolute -top-24 -left-24 w-96 h-96 bg-brand-200/40 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="absolute top-1/2 -right-24 w-96 h-96 bg-amber-200/40 rounded-full blur-3xl pointer-events-none"></div>
-
+    <section id="home" class="relative overflow-hidden bg-gradient-to-b from-brand-50 via-emerald-50/50 to-white py-10 lg:py-14 border-b border-slate-100">
         <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 <!-- Left Hero Content -->
-                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    <div class="inline-flex items-center gap-2 bg-emerald-100 text-brand-800 text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full border border-emerald-200 shadow-sm">
+                <div class="lg:col-span-7 space-y-5 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-emerald-100 text-brand-900 text-xs sm:text-sm font-bold px-4 py-1.5 rounded-full border border-emerald-300 shadow-sm">
                         <i class="fa-solid fa-award text-amber-600"></i>
                         <span data-en="Recognized by Govt. of Maharashtra & MSBVE (Code: 201208)" data-mr="महाराष्ट्र शासन व MSBVE मान्यताप्राप्त (कोड: २०१२०८)">
                             Recognized by Govt. of Maharashtra & MSBVE (Code: 201208)
@@ -157,98 +155,84 @@
 
                     <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
                         <span data-en="Master Naturopathy & Yoga Therapy" data-mr="निसर्गोपचार व योग मध्ये करियर घडवा">Master Naturopathy & Yoga Therapy</span> <br>
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-700 via-brand-600 to-amber-600" data-en="A Path to Natural Healing & Career Success" data-mr="आरोग्यदायी जीवन आणि रोजगाराची उत्तम संधी">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-800 via-brand-600 to-amber-600" data-en="A Path to Natural Healing & Career Success" data-mr="आरोग्यदायी जीवन आणि रोजगाराची उत्तम संधी">
                             A Path to Natural Healing & Career Success
                         </span>
                     </h2>
 
-                    <p class="text-base sm:text-lg text-slate-600 max-w-2xl leading-relaxed mx-auto lg:mx-0" data-en="Join our 1-Year Diploma Course (C.C. In Yoga & Naturotherapy). Learn Ayurvedic Acupressure, Hydrotherapy, Mud Therapy, Yoga Therapy & Diet from experienced Ayurvedic Doctors. Minimum Qualification: S.S.C / 10th Pass." data-mr="मनोहर वसुधा फाउंडेशन आयोजित १ वर्षाचा शासकीय पदविका अभ्यासक्रम! ॲक्यूप्रेशर, जलोपचार, मृत्तिकोपचार, योग आणि आहाराचे सखोल शास्त्रोक्त व प्रात्यक्षिक ज्ञान मिळवा. किमान पात्रता: इ. १० वी उत्तीर्ण (S.S.C Pass).">
+                    <p class="text-base text-slate-700 max-w-2xl leading-relaxed mx-auto lg:mx-0 font-medium" data-en="Join our 1-Year Diploma Course (C.C. In Yoga & Naturotherapy). Learn Ayurvedic Acupressure, Hydrotherapy, Mud Therapy, Yoga Therapy & Diet from experienced Ayurvedic Doctors. Minimum Qualification: S.S.C / 10th Pass." data-mr="मनोहर वसुधा फाउंडेशन आयोजित १ वर्षाचा शासकीय पदविका अभ्यासक्रम! ॲक्यूप्रेशर, जलोपचार, मृत्तिकोपचार, योग आणि आहाराचे सखोल शास्त्रोक्त व प्रात्यक्षिक ज्ञान मिळवा. किमान पात्रता: इ. १० वी उत्तीर्ण (S.S.C Pass).">
                         Join our 1-Year Diploma Course (C.C. In Yoga & Naturotherapy). Learn Ayurvedic Acupressure, Hydrotherapy, Mud Therapy, Yoga Therapy & Diet from experienced Ayurvedic Doctors. Minimum Qualification: S.S.C / 10th Pass.
                     </p>
 
                     <!-- Key Feature Badges -->
-                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 max-w-xl mx-auto lg:mx-0">
-                        <div class="flex items-center gap-2.5 bg-white p-3 rounded-xl border border-slate-100 shadow-sm">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-1 max-w-xl mx-auto lg:mx-0">
+                        <div class="flex items-center gap-2.5 bg-white p-3 rounded-xl border border-slate-200 shadow-sm">
                             <i class="fa-solid fa-graduation-cap text-brand-600 text-lg"></i>
                             <div class="text-left">
-                                <p class="text-xs text-slate-500 font-medium" data-en="Eligibility" data-mr="प्रवेश पात्रता">Eligibility</p>
-                                <p class="text-xs font-bold text-slate-800" data-en="S.S.C (10th) Pass" data-mr="१० वी उत्तीर्ण (S.S.C)">S.S.C (10th) Pass</p>
+                                <p class="text-xs text-slate-600 font-semibold" data-en="Eligibility" data-mr="प्रवेश पात्रता">Eligibility</p>
+                                <p class="text-xs font-extrabold text-slate-900" data-en="S.S.C (10th) Pass" data-mr="१० वी उत्तीर्ण (S.S.C)">S.S.C (10th) Pass</p>
                             </div>
                         </div>
 
-                        <div class="flex items-center gap-2.5 bg-white p-3 rounded-xl border border-slate-100 shadow-sm">
-                            <i class="fa-solid fa-clock text-amber-500 text-lg"></i>
+                        <div class="flex items-center gap-2.5 bg-white p-3 rounded-xl border border-slate-200 shadow-sm">
+                            <i class="fa-solid fa-clock text-amber-600 text-lg"></i>
                             <div class="text-left">
-                                <p class="text-xs text-slate-500 font-medium" data-en="Duration" data-mr="कालावधी">Duration</p>
-                                <p class="text-xs font-bold text-slate-800" data-en="1 Year (Part-Time)" data-mr="१ वर्ष (पार्ट टाईम)">1 Year (Part-Time)</p>
+                                <p class="text-xs text-slate-600 font-semibold" data-en="Duration" data-mr="कालावधी">Duration</p>
+                                <p class="text-xs font-extrabold text-slate-900" data-en="1 Year (Part-Time)" data-mr="१ वर्ष (पार्ट टाईम)">1 Year (Part-Time)</p>
                             </div>
                         </div>
 
-                        <div class="flex items-center gap-2.5 bg-white p-3 rounded-xl border border-slate-100 shadow-sm col-span-2 sm:col-span-1">
+                        <div class="flex items-center gap-2.5 bg-white p-3 rounded-xl border border-slate-200 shadow-sm col-span-2 sm:col-span-1">
                             <i class="fa-solid fa-users text-brand-600 text-lg"></i>
                             <div class="text-left">
-                                <p class="text-xs text-slate-500 font-medium" data-en="Batch Size" data-mr="प्रवेश क्षमता">Batch Size</p>
-                                <p class="text-xs font-bold text-slate-800" data-en="Only 25 Students" data-mr="फक्त २५ विद्यार्थी">Only 25 Students</p>
+                                <p class="text-xs text-slate-600 font-semibold" data-en="Batch Size" data-mr="प्रवेश क्षमता">Batch Size</p>
+                                <p class="text-xs font-extrabold text-slate-900" data-en="Only 25 Students" data-mr="फक्त २५ विद्यार्थी">Only 25 Students</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- CTA Buttons -->
-                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
-                        <a href="admission.html" class="w-full sm:w-auto bg-gradient-to-r from-red-600 via-brand-600 to-brand-700 hover:from-red-700 hover:to-brand-800 text-white font-extrabold px-8 py-4 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-0.5 flex items-center justify-center gap-2 text-base ring-4 ring-amber-300/50">
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 pt-3">
+                        <a href="admission.html#admissionFormCard" class="w-full sm:w-auto bg-gradient-to-r from-red-600 via-brand-600 to-brand-700 hover:from-red-700 hover:to-brand-800 text-white font-black px-7 py-3.5 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2 text-base ring-4 ring-amber-300/50">
                             <i class="fa-solid fa-user-plus text-amber-300 text-lg animate-bounce"></i>
                             <span data-en="Fill Admission Form (Ends 30 Sep)" data-mr="प्रवेश अर्ज भरा (३० सप्टें. शेवटची तारीख)">Fill Admission Form (Ends 30 Sep)</span>
                         </a>
 
-                        <a href="acupressure.html" class="w-full sm:w-auto bg-white hover:bg-slate-50 text-slate-800 font-bold px-6 py-4 rounded-xl shadow-sm border border-slate-200 transition-all flex items-center justify-center gap-2 text-base">
-                            <i class="fa-solid fa-hand-holding-heart text-brand-600"></i>
+                        <a href="acupressure.html" class="w-full sm:w-auto bg-white hover:bg-slate-50 text-slate-900 font-extrabold px-6 py-3.5 rounded-xl shadow-sm border border-slate-300 transition-all flex items-center justify-center gap-2 text-base">
+                            <i class="fa-solid fa-hand-holding-heart text-brand-700"></i>
                             <span data-en="Explore Acupressure Guide" data-mr="ॲक्यूप्रेशर मार्गदर्शन पहा">Explore Acupressure Guide</span>
                         </a>
                     </div>
 
-                    <!-- Contact Bar Quick Link -->
-                    <div class="pt-4 flex items-center justify-center lg:justify-start gap-3 text-sm text-slate-600">
-                        <i class="fa-solid fa-phone-volume text-brand-600 animate-bounce"></i>
+                    <div class="pt-2 flex items-center justify-center lg:justify-start gap-2 text-sm text-slate-700 font-semibold">
+                        <i class="fa-solid fa-phone-volume text-brand-700 animate-bounce"></i>
                         <span data-en="For admission inquiry, call Yogesh Mahangade:" data-mr="अधिक माहिती व प्रवेशासाठी संपर्क:">For admission inquiry, call Yogesh Mahangade:</span>
-                        <a href="tel:9987941559" class="font-extrabold text-brand-800 underline hover:text-brand-600">9987941559</a>
+                        <a href="tel:9987941559" class="font-black text-brand-900 underline hover:text-brand-700">9987941559</a>
                     </div>
                 </div>
 
                 <!-- Right Hero Visual Card -->
                 <div class="lg:col-span-5">
                     <div class="relative mx-auto max-w-md lg:max-w-none">
-                        <!-- Poster Preview Card -->
-                        <div class="bg-white rounded-3xl p-4 shadow-2xl border border-slate-100 space-y-4 group">
+                        <div class="bg-white rounded-3xl p-4 shadow-2xl border border-slate-200 space-y-4 group">
                             <div class="relative overflow-hidden rounded-2xl bg-slate-100 aspect-[3/4]">
                                 <img src="assets/images/poster_english.jpg" alt="Naturopathy Course Poster" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" id="heroPosterImg">
-                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-80 flex flex-col justify-end p-5 text-white">
-                                    <span class="bg-amber-500 text-brand-900 text-xs font-bold px-3 py-1 rounded-full w-max mb-2">Govt. Board Recognized</span>
-                                    <h3 class="font-bold text-lg leading-snug" data-en="Manohar Vasudha Foundation" data-mr="मनोहर वसुधा फाउंडेशन">Manohar Vasudha Foundation</h3>
-                                    <p class="text-xs text-amber-200" data-en="C.C. In Yoga & Naturotherapy | MSBVE Code: 201208" data-mr="निसर्गोपचार व योग | MSBVE कोड: २०१२०८">C.C. In Yoga & Naturotherapy | MSBVE Code: 201208</p>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90 flex flex-col justify-end p-5 text-white">
+                                    <span class="bg-amber-500 text-slate-950 text-xs font-black px-3 py-1 rounded-full w-max mb-2">Govt. Board Recognized</span>
+                                    <h3 class="font-black text-lg leading-snug" data-en="Manohar Vasudha Foundation" data-mr="मनोहर वसुधा फाउंडेशन">Manohar Vasudha Foundation</h3>
+                                    <p class="text-xs text-amber-300 font-bold" data-en="C.C. In Yoga & Naturotherapy | MSBVE Code: 201208" data-mr="निसर्गोपचार व योग | MSBVE कोड: २०१२०८">C.C. In Yoga & Naturotherapy | MSBVE Code: 201208</p>
                                 </div>
                             </div>
 
-                            <!-- Poster Language Switch buttons -->
                             <div class="flex items-center justify-between gap-2 px-2 pt-1">
-                                <span class="text-xs font-semibold text-slate-500" data-en="View Poster Image:" data-mr="पॅम्पलेट पहा:">View Poster Image:</span>
+                                <span class="text-xs font-extrabold text-slate-600" data-en="View Poster Image:" data-mr="पॅम्पलेट पहा:">View Poster Image:</span>
                                 <div class="flex gap-2">
-                                    <button id="showEngPosterBtn" class="px-3 py-1 bg-brand-600 text-white rounded-lg text-xs font-bold shadow-sm hover:bg-brand-700 transition">English</button>
-                                    <button id="showMarPosterBtn" class="px-3 py-1 bg-slate-200 text-slate-700 rounded-lg text-xs font-bold hover:bg-slate-300 transition">मराठी</button>
-                                    <button id="zoomPosterBtn" class="p-1.5 bg-amber-500 text-white rounded-lg text-xs hover:bg-amber-600 transition" title="Enlarge Poster">
+                                    <button id="showEngPosterBtn" class="px-3 py-1 bg-brand-700 text-white rounded-lg text-xs font-extrabold shadow-sm hover:bg-brand-800 transition">English</button>
+                                    <button id="showMarPosterBtn" class="px-3 py-1 bg-slate-200 text-slate-800 rounded-lg text-xs font-extrabold hover:bg-slate-300 transition">मराठी</button>
+                                    <button id="zoomPosterBtn" class="p-1.5 bg-amber-500 text-slate-950 font-black rounded-lg text-xs hover:bg-amber-600 transition" title="Enlarge Poster">
                                         <i class="fa-solid fa-expand"></i>
                                     </button>
                                 </div>
-                            </div>
-                        </div>
-
-                        <!-- Floating Urgency Badge -->
-                        <div class="absolute -bottom-6 -left-6 bg-red-600 text-white rounded-2xl p-4 shadow-xl border border-red-500 hidden sm:flex items-center gap-3.5 max-w-xs animate-bounce-slow">
-                            <div class="w-12 h-12 rounded-full bg-white text-red-600 flex items-center justify-center text-xl font-black flex-shrink-0 shadow">
-                                <i class="fa-solid fa-hourglass-half"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-xs font-extrabold uppercase text-amber-200">Seats Closing Soon!</h4>
-                                <p class="text-[11px] text-white leading-tight font-medium">Admissions Open Till 30th September Only. Max 25 per batch.</p>
                             </div>
                         </div>
                     </div>
@@ -258,134 +242,72 @@
     </section>
 
     <!-- QUICK STATS BAR -->
-    <section class="bg-brand-900 text-white py-8 border-y border-brand-800">
+    <section class="bg-slate-900 text-white py-8 border-y border-slate-800">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
                 <div class="space-y-1">
-                    <p class="text-3xl lg:text-4xl font-extrabold text-amber-400">1 Year</p>
-                    <p class="text-xs sm:text-sm text-emerald-100" data-en="Government Approved Course" data-mr="शासकीय मान्यतेचा कालावधी">Government Approved Course</p>
+                    <p class="text-3xl lg:text-4xl font-black text-amber-400">1 Year</p>
+                    <p class="text-xs sm:text-sm text-slate-200 font-bold" data-en="Government Approved Course" data-mr="शासकीय मान्यतेचा कालावधी">Government Approved Course</p>
                 </div>
                 <div class="space-y-1">
-                    <p class="text-3xl lg:text-4xl font-extrabold text-amber-400">S.S.C Pass</p>
-                    <p class="text-xs sm:text-sm text-emerald-100" data-en="Minimum Requirement" data-mr="किमान शैक्षणिक पात्रता">Minimum Requirement</p>
+                    <p class="text-3xl lg:text-4xl font-black text-amber-400">S.S.C Pass</p>
+                    <p class="text-xs sm:text-sm text-slate-200 font-bold" data-en="Minimum Requirement" data-mr="किमान शैक्षणिक पात्रता">Minimum Requirement</p>
                 </div>
                 <div class="space-y-1">
-                    <p class="text-3xl lg:text-4xl font-extrabold text-amber-400">25 Seats</p>
-                    <p class="text-xs sm:text-sm text-emerald-100" data-en="Exclusive Small Batch" data-mr="प्रवेश क्षमता प्रति बॅच">Exclusive Small Batch</p>
+                    <p class="text-3xl lg:text-4xl font-black text-amber-400">25 Seats</p>
+                    <p class="text-xs sm:text-sm text-slate-200 font-bold" data-en="Exclusive Small Batch" data-mr="प्रवेश क्षमता प्रति बॅच">Exclusive Small Batch</p>
                 </div>
                 <div class="space-y-1">
-                    <p class="text-3xl lg:text-4xl font-extrabold text-amber-400">100%</p>
-                    <p class="text-xs sm:text-sm text-emerald-100" data-en="Practical & Internship Training" data-mr="प्रात्यक्षिक आणि क्लिनिकल ट्रेनिंग">Practical & Internship Training</p>
+                    <p class="text-3xl lg:text-4xl font-black text-amber-400">100%</p>
+                    <p class="text-xs sm:text-sm text-slate-200 font-bold" data-en="Practical & Internship Training" data-mr="प्रात्यक्षिक आणि क्लिनिकल ट्रेनिंग">Practical & Internship Training</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ABOUT SECTION PREVIEW -->
-    <section class="py-16 bg-white">
+    <!-- FOOTER WITH HIGH-CONTRAST DARK BACKGROUND & BRIGHT LINKS -->
+    <footer id="contact" class="bg-slate-900 text-slate-100 pt-12 pb-8 border-t border-slate-800">
         <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-                <div class="lg:col-span-6 space-y-4">
-                    <span class="text-brand-600 font-bold text-xs uppercase tracking-widest bg-brand-50 px-3 py-1 rounded-full border border-brand-200">Course Overview</span>
-                    <h2 class="text-3xl font-bold text-slate-900" data-en="Empowering You with Holistic Healing Skills" data-mr="आरोग्यदायी जीवन आणि रोजगाराची सुवर्णसंधी">Empowering You with Holistic Healing Skills</h2>
-                    <p class="text-slate-600 text-sm leading-relaxed" data-en="Manohar Vasudha Foundation is dedicated to spreading authentic knowledge of Naturopathy, Acupressure, and Yoga Therapy. Recognized by Maharashtra State Board of Vocational Education (MSBVE), Mumbai (Course Code: 201208)." data-mr="मनोहर वसुधा फाउंडेशनच्या माध्यमातून महाराष्ट्र राज्य व्यवसाय शिक्षण परीक्षा मंडळ (MSBVE), मुंबई मान्यताप्राप्त १ वर्षाचा पदविका अभ्यासक्रम चालवला जातो.">
-                        Manohar Vasudha Foundation is dedicated to spreading authentic knowledge of Naturopathy, Acupressure, and Yoga Therapy. Recognized by Maharashtra State Board of Vocational Education (MSBVE), Mumbai (Course Code: 201208).
-                    </p>
-                    <div class="pt-2">
-                        <a href="about.html" class="text-brand-700 font-bold text-sm hover:text-brand-900 flex items-center gap-1">
-                            <span>Read Complete Course Philosophy</span> &rarr;
-                        </a>
-                    </div>
-                </div>
-
-                <div class="lg:col-span-6 grid grid-cols-2 gap-4">
-                    <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
-                        <i class="fa-solid fa-hand-holding-medical text-brand-600 text-2xl mb-2"></i>
-                        <h3 class="font-bold text-slate-900 text-sm">Acupressure Points</h3>
-                        <p class="text-xs text-slate-500 mt-1">Learn 100+ vital pressure points taught by Ayurvedic Doctors.</p>
-                    </div>
-                    <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
-                        <i class="fa-solid fa-water text-brand-600 text-2xl mb-2"></i>
-                        <h3 class="font-bold text-slate-900 text-sm">Panchmahabhuta</h3>
-                        <p class="text-xs text-slate-500 mt-1">Hydrotherapy, Mud packs, Sun baths & Natural Diet.</p>
-                    </div>
-                    <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
-                        <i class="fa-solid fa-om text-brand-600 text-2xl mb-2"></i>
-                        <h3 class="font-bold text-slate-900 text-sm">Yoga & Shatkarma</h3>
-                        <p class="text-xs text-slate-500 mt-1">Asanas, Pranayama, Jalneti, Sutraneti & Meditation.</p>
-                    </div>
-                    <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
-                        <i class="fa-solid fa-briefcase text-brand-600 text-2xl mb-2"></i>
-                        <h3 class="font-bold text-slate-900 text-sm">Self-Employment</h3>
-                        <p class="text-xs text-slate-500 mt-1">Start your own Naturopathy Clinic or Yoga Center.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- URGENT ADMISSION CALLOUT BANNER -->
-    <section class="bg-gradient-to-r from-red-600 via-amber-600 to-red-700 text-white py-12">
-        <div class="container mx-auto px-4 text-center max-w-3xl space-y-4">
-            <span class="bg-white text-red-700 text-xs font-black px-4 py-1 rounded-full uppercase tracking-wider shadow">Admissions Closing Soon</span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold" data-en="Limited 25 Seats Per Batch — Apply Before 30th September!" data-mr="फक्त २५ जागा! ३० सप्टेंबरपूर्वी आपला प्रवेश निश्चित करा">
-                Limited 25 Seats Per Batch — Apply Before 30th September!
-            </h2>
-            <p class="text-amber-100 text-sm sm:text-base max-w-2xl mx-auto" data-en="Minimum entry qualification: S.S.C (10th) Pass. Secure your seat today in Maharashtra State Board recognized Naturopathy & Yoga Diploma." data-mr="किमान पात्रता इयत्ता १० वी उत्तीर्ण. एमएसबीव्हीई (MSBVE) मान्यताप्राप्त कोर्ससाठी आजच अर्ज करा.">
-                Minimum entry qualification: S.S.C (10th) Pass. Secure your seat today in Maharashtra State Board recognized Naturopathy & Yoga Diploma.
-            </p>
-            <div class="pt-2">
-                <a href="admission.html" class="inline-flex items-center gap-2 bg-white text-red-700 hover:bg-amber-100 font-extrabold px-8 py-4 rounded-xl shadow-2xl transition transform hover:scale-105 text-base">
-                    <i class="fa-solid fa-file-pen"></i>
-                    <span>Fill Online Admission Form Now</span> &rarr;
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer id="contact" class="bg-brand-950 text-slate-300 pt-16 pb-8 border-t border-brand-800">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
                 <div class="space-y-4">
                     <div class="flex items-center gap-3">
                         <div class="w-10 h-10 rounded-full bg-brand-600 text-white flex items-center justify-center text-xl shadow-md">
                             <i class="fa-solid fa-leaf"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-white text-base">Manohar Vasudha Foundation</h3>
-                            <p class="text-xs text-emerald-400 font-medium">MSBVE Approved Institute</p>
+                            <h3 class="font-extrabold text-white text-base">Manohar Vasudha Foundation</h3>
+                            <p class="text-xs text-amber-400 font-bold">MSBVE Approved Institute</p>
                         </div>
                     </div>
-                    <p class="text-xs text-slate-400 leading-relaxed">
+                    <p class="text-xs text-slate-300 leading-relaxed font-medium">
                         Promoting natural health, yoga therapy, and acupressure education recognized by Govt. of Maharashtra.
                     </p>
                 </div>
 
                 <div class="space-y-3">
-                    <h4 class="font-bold text-white text-sm uppercase tracking-wider border-b border-brand-800 pb-2">Website Pages</h4>
-                    <ul class="space-y-2 text-xs">
-                        <li><a href="index.html" class="hover:text-amber-400 transition text-amber-300 font-bold">Home</a></li>
-                        <li><a href="about.html" class="hover:text-amber-400 transition">About Course</a></li>
-                        <li><a href="syllabus.html" class="hover:text-amber-400 transition">Syllabus & Exam</a></li>
-                        <li><a href="acupressure.html" class="hover:text-amber-400 transition">Acupressure Point Guide</a></li>
-                        <li><a href="videos.html" class="hover:text-amber-400 transition">Videos Gallery</a></li>
-                        <li><a href="blog.html" class="hover:text-amber-400 transition">Doctor's Health Blog</a></li>
-                        <li><a href="posters.html" class="hover:text-amber-400 transition">Official Flyers</a></li>
-                        <li><a href="admission.html" class="hover:text-amber-400 transition text-amber-300 font-bold">Online Admission Form</a></li>
+                    <h4 class="font-extrabold text-white text-sm uppercase tracking-wider border-b border-slate-800 pb-2">Website Pages</h4>
+                    <ul class="space-y-2 text-xs font-bold">
+                        <li><a href="index.html" class="text-amber-300 hover:text-amber-200 transition">Home</a></li>
+                        <li><a href="about.html" class="text-slate-200 hover:text-amber-300 transition">About Course</a></li>
+                        <li><a href="syllabus.html" class="text-slate-200 hover:text-amber-300 transition">Syllabus & Exam</a></li>
+                        <li><a href="acupressure.html" class="text-slate-200 hover:text-amber-300 transition">Acupressure Point Guide</a></li>
+                        <li><a href="videos.html" class="text-slate-200 hover:text-amber-300 transition">Videos Gallery</a></li>
+                        <li><a href="blog.html" class="text-slate-200 hover:text-amber-300 transition">Doctor's Health Blog</a></li>
+                        <li><a href="posters.html" class="text-slate-200 hover:text-amber-300 transition">Official Flyers</a></li>
+                        <li><a href="admission.html#admissionFormCard" class="text-amber-300 hover:text-amber-200 font-black">Online Admission Form</a></li>
                     </ul>
                 </div>
 
                 <div class="space-y-3">
-                    <h4 class="font-bold text-white text-sm uppercase tracking-wider border-b border-brand-800 pb-2">Contact Details</h4>
-                    <div class="space-y-2.5 text-xs">
+                    <h4 class="font-extrabold text-white text-sm uppercase tracking-wider border-b border-slate-800 pb-2">Contact Details</h4>
+                    <div class="space-y-2.5 text-xs text-slate-200 font-semibold">
                         <p class="flex items-start gap-2.5">
                             <i class="fa-solid fa-user-tie text-amber-400 mt-0.5"></i>
-                            <span><strong>Contact Person:</strong> Yogesh Mahangade</span>
+                            <span><strong class="text-white">Contact Person:</strong> Yogesh Mahangade</span>
                         </p>
                         <p class="flex items-center gap-2.5">
                             <i class="fa-solid fa-phone text-amber-400"></i>
-                            <a href="tel:9987941559" class="hover:text-white font-bold text-amber-300">9987941559</a>
+                            <a href="tel:9987941559" class="hover:text-white font-black text-amber-300 text-sm">9987941559</a>
                         </p>
                         <p class="flex items-start gap-2.5">
                             <i class="fa-solid fa-location-dot text-amber-400 mt-0.5"></i>
@@ -393,25 +315,25 @@
                         </p>
                         <p class="flex items-center gap-2.5">
                             <i class="fa-solid fa-certificate text-amber-400"></i>
-                            <span>MSBVE Course Code: 201208</span>
+                            <span class="text-amber-300 font-bold">MSBVE Course Code: 201208</span>
                         </p>
                     </div>
                 </div>
 
                 <div class="space-y-4">
-                    <h4 class="font-bold text-white text-sm uppercase tracking-wider border-b border-brand-800 pb-2">WhatsApp Inquiry</h4>
-                    <p class="text-xs text-slate-400">
+                    <h4 class="font-extrabold text-white text-sm uppercase tracking-wider border-b border-slate-800 pb-2">WhatsApp Inquiry</h4>
+                    <p class="text-xs text-slate-300 font-medium">
                         Chat directly with Yogesh Mahangade for admissions, fees, and batch schedules.
                     </p>
-                    <a href="https://wa.me/919987941559?text=Hello%20Yogesh%20Mahangade%20Sir,%20I%20am%20interested%20in%20Naturopathy%20and%20Yoga%20Course%20Admission." target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-4 py-3 rounded-xl shadow-lg transition flex items-center justify-center gap-2 text-xs">
+                    <a href="https://wa.me/919987941559?text=Hello%20Yogesh%20Mahangade%20Sir,%20I%20am%20interested%20in%20Naturopathy%20and%20Yoga%20Course%20Admission." target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-4 py-3 rounded-xl shadow-lg transition flex items-center justify-center gap-2 text-xs">
                         <i class="fa-brands fa-whatsapp text-lg"></i> Chat on WhatsApp (9987941559)
                     </a>
                 </div>
             </div>
 
-            <div class="pt-8 border-t border-brand-900 text-center text-xs text-slate-500 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="pt-6 border-t border-slate-800 text-center text-xs text-slate-400 flex flex-col sm:flex-row justify-between items-center gap-3">
                 <p>&copy; 2026 Manohar Vasudha Foundation. All Rights Reserved.</p>
-                <p class="text-emerald-400 font-medium">MSBVE Approved | Course Code 201208</p>
+                <p class="text-amber-400 font-bold">MSBVE Approved | Course Code 201208</p>
             </div>
         </div>
     </footer>
