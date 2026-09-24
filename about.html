@@ -21,17 +21,16 @@
                 extend: {
                     colors: {
                         brand: {
-                            50: '#f0fdf4',
-                            100: '#dcfce7',
-                            200: '#bbf7d0',
+                            50: '#f4fbf7',
+                            100: '#e1f5eb',
+                            200: '#c3ebd7',
                             500: '#10b981',
                             600: '#059669',
                             700: '#047857',
                             800: '#065f46',
                             900: '#064e3b',
                             950: '#022c22',
-                            gold: '#d97706',
-                            accent: '#f59e0b'
+                            gold: '#d97706'
                         }
                     },
                     fontFamily: {
@@ -43,23 +42,25 @@
         }
     </script>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
+<body class="bg-emerald-50/20 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
 
-    <!-- Top Announcement Bar -->
-    <div class="bg-slate-900 text-amber-300 text-xs sm:text-sm py-2 px-4 font-bold flex justify-between items-center border-b border-slate-800">
+    <!-- SLEEK TOP ANNOUNCEMENT BAR -->
+    <div class="bg-brand-900 text-amber-200 text-xs py-2.5 px-4 font-semibold border-b border-brand-800">
         <div class="container mx-auto flex justify-between items-center">
             <div class="flex items-center gap-2">
-                <span class="bg-red-600 text-white px-2.5 py-0.5 rounded-full text-xs font-black uppercase tracking-wider animate-pulse">Admissions Open 2026</span>
-                <span class="hidden md:inline text-slate-100 font-semibold" data-en="MSBVE Recognized 1-Year Course (Code: 201208) | Max 25 Students per Batch" data-mr="महाराष्ट्र शासन व MSBVE मान्यताप्राप्त १ वर्षाचा अभ्यासक्रम (कोड: २०१२०८) | फक्त २५ जागा">
-                    MSBVE Recognized 1-Year Course (Code: 201208) | Max 25 Students per Batch
+                <span class="bg-amber-500 text-slate-950 px-2.5 py-0.5 rounded-full text-[11px] font-extrabold uppercase tracking-wide animate-pulse">
+                    ⚡ Open Till 30 Sep
+                </span>
+                <span data-en="MSBVE Recognized 1-Year Course (Code: 201208) | Max 25 Seats" data-mr="महाराष्ट्र शासन व MSBVE मान्यताप्राप्त १ वर्षाचा अभ्यासक्रम (कोड: २०१२०८)">
+                    MSBVE Recognized 1-Year Course (Code: 201208) | Max 25 Seats
                 </span>
             </div>
             <div class="flex items-center gap-4">
-                <a href="tel:9987941559" class="text-white hover:text-amber-300 transition-colors flex items-center gap-1 font-extrabold">
+                <a href="tel:9987941559" class="text-white hover:text-amber-300 transition flex items-center gap-1 font-bold">
                     <i class="fa-solid fa-phone text-xs text-amber-400"></i> <span>9987941559</span>
                 </a>
-                <div class="h-3 w-px bg-slate-700"></div>
-                <button id="langToggleBtn" class="flex items-center gap-1.5 bg-brand-700 hover:bg-brand-600 text-white px-3 py-0.5 rounded-md text-xs font-bold transition border border-brand-500">
+                <div class="h-3 w-px bg-brand-700"></div>
+                <button id="langToggleBtn" class="flex items-center gap-1.5 bg-brand-800 hover:bg-brand-700 text-white px-3 py-0.5 rounded-md text-xs font-bold border border-brand-600">
                     <i class="fa-solid fa-language text-amber-300"></i>
                     <span id="currentLangLabel">मराठी में देखें</span>
                 </button>
@@ -67,33 +68,33 @@
         </div>
     </div>
 
-    <!-- Main Navigation Bar -->
-    <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-md border-b border-slate-200" id="navbar">
-        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+    <!-- NAVIGATION BAR -->
+    <nav class="sticky top-0 z-40 bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-100" id="navbar">
+        <div class="container mx-auto px-4 py-3.5 flex items-center justify-between">
             <a href="index.html" class="flex items-center gap-3">
-                <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-brand-700 to-brand-500 flex items-center justify-center text-white text-xl shadow-md ring-2 ring-brand-200">
+                <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-brand-700 to-brand-500 flex items-center justify-center text-white text-xl shadow-md ring-2 ring-brand-100">
                     <i class="fa-solid fa-leaf"></i>
                 </div>
                 <div>
                     <h1 class="text-base sm:text-lg font-bold text-slate-900 leading-tight" data-en="Manohar Vasudha Foundation" data-mr="मनोहर वसुधा फाउंडेशन">Manohar Vasudha Foundation</h1>
-                    <p class="text-xs text-brand-700 font-bold" data-en="Naturopathy & Yoga Institute (MSBVE Approved)" data-mr="निसर्गोपचार व योग संस्था (MSBVE मान्यताप्राप्त)">Naturopathy & Yoga Institute (MSBVE Approved)</p>
+                    <p class="text-xs text-brand-700 font-semibold" data-en="Naturopathy & Yoga Institute (MSBVE Approved)" data-mr="निसर्गोपचार व योग संस्था (MSBVE मान्यताप्राप्त)">Naturopathy & Yoga Institute (MSBVE Approved)</p>
                 </div>
             </a>
 
-            <div class="hidden lg:flex items-center gap-6 text-sm font-extrabold text-slate-800">
-                <a href="index.html" class="hover:text-brand-700 transition-colors py-1" data-en="Home" data-mr="मुख्य पृष्ठ">Home</a>
-                <a href="about.html" class="text-brand-700 font-black border-b-2 border-brand-600 py-1" data-en="About Course" data-mr="अभ्यासक्रम माहिती">About Course</a>
-                <a href="syllabus.html" class="hover:text-brand-700 transition-colors py-1" data-en="Syllabus & Exam" data-mr="अभ्यासक्रम व परीक्षा">Syllabus & Exam</a>
-                <a href="acupressure.html" class="hover:text-brand-700 transition-colors py-1 flex items-center gap-1.5" data-en="Acupressure Guide" data-mr="ॲक्यूप्रेशर मार्गदर्शन">
+            <div class="hidden lg:flex items-center gap-7 text-sm font-bold text-slate-700">
+                <a href="index.html" class="hover:text-brand-700 transition py-1" data-en="Home" data-mr="मुख्य पृष्ठ">Home</a>
+                <a href="about.html" class="text-brand-700 font-extrabold border-b-2 border-brand-600 py-1" data-en="About Course" data-mr="अभ्यासक्रम माहिती">About Course</a>
+                <a href="syllabus.html" class="hover:text-brand-700 transition py-1" data-en="Syllabus & Exam" data-mr="अभ्यासक्रम व परीक्षा">Syllabus & Exam</a>
+                <a href="acupressure.html" class="hover:text-brand-700 transition py-1 flex items-center gap-1.5" data-en="Acupressure Guide" data-mr="ॲक्यूप्रेशर मार्गदर्शन">
                     <i class="fa-solid fa-hand-holding-medical text-brand-600"></i> Acupressure Guide
                 </a>
-                <a href="videos.html" class="hover:text-brand-700 transition-colors py-1" data-en="Videos" data-mr="व्हिडीओ">Videos</a>
-                <a href="blog.html" class="hover:text-brand-700 transition-colors py-1" data-en="Health Blog" data-mr="आरोग्य लेख">Health Blog</a>
-                <a href="posters.html" class="hover:text-brand-700 transition-colors py-1" data-en="Posters" data-mr="पॅम्पलेट्स">Posters</a>
+                <a href="videos.html" class="hover:text-brand-700 transition py-1" data-en="Videos" data-mr="व्हिडीओ">Videos</a>
+                <a href="blog.html" class="hover:text-brand-700 transition py-1" data-en="Health Blog" data-mr="आरोग्य लेख">Health Blog</a>
+                <a href="posters.html" class="hover:text-brand-700 transition py-1" data-en="Posters" data-mr="पॅम्पलेट्स">Posters</a>
             </div>
 
             <div class="flex items-center gap-3">
-                <a href="admission.html#admissionFormCard" class="bg-gradient-to-r from-red-600 to-brand-700 hover:from-red-700 hover:to-brand-800 text-white font-extrabold px-5 py-2.5 rounded-full text-xs sm:text-sm shadow-md flex items-center gap-2 ring-2 ring-amber-300">
+                <a href="admission.html#admissionFormCard" class="bg-gradient-to-r from-brand-600 to-brand-700 hover:from-brand-700 hover:to-brand-800 text-white font-extrabold px-5 py-2.5 rounded-full text-xs sm:text-sm shadow-md hover:shadow-lg transition transform hover:-translate-y-0.5 flex items-center gap-2">
                     <i class="fa-solid fa-graduation-cap text-amber-300"></i>
                     <span data-en="Apply For Admission" data-mr="प्रवेशासाठी अर्ज करा">Apply For Admission</span>
                 </a>
@@ -107,7 +108,7 @@
             <a href="index.html" class="mobile-link block py-2 border-b border-slate-100 hover:text-brand-700" data-en="Home" data-mr="मुख्य पृष्ठ">Home</a>
             <a href="about.html" class="mobile-link block py-2 border-b border-slate-100 text-brand-700 font-black" data-en="About Course" data-mr="अभ्यासक्रम माहिती">About Course</a>
             <a href="syllabus.html" class="mobile-link block py-2 border-b border-slate-100 hover:text-brand-700" data-en="Syllabus & Exam" data-mr="अभ्यासक्रम व परीक्षा">Syllabus & Exam</a>
-            <a href="acupressure.html" class="mobile-link block py-2 border-b border-slate-100 hover:text-brand-700" data-en="Acupressure Points Guide" data-mr="ॲक्यूप्रेशर पॉइंट मार्गदर्शन">Acupressure Points Guide</a>
+            <a href="acupressure.html" class="mobile-link block py-2 border-b border-slate-100 hover:text-brand-700" data-en="Acupressure Points Guide" data-mr="ॲक्यूप्रेशर point मार्गदर्शन">Acupressure Points Guide</a>
             <a href="videos.html" class="mobile-link block py-2 border-b border-slate-100 hover:text-brand-700" data-en="Videos Gallery" data-mr="व्हिडीओ गॅलरी">Videos Gallery</a>
             <a href="blog.html" class="mobile-link block py-2 border-b border-slate-100 hover:text-brand-700" data-en="Health Blog" data-mr="आरोग्य लेख">Health Blog</a>
             <a href="posters.html" class="mobile-link block py-2 border-b border-slate-100 hover:text-brand-700" data-en="Official Pamphlets" data-mr="अधिकृत पॅम्पलेट्स">Official Pamphlets</a>
@@ -115,52 +116,34 @@
         </div>
     </nav>
 
-    <!-- HIGHLIGHTED URGENT ADMISSION BANNER BAR -->
-    <div class="bg-gradient-to-r from-red-600 via-amber-500 to-red-600 text-white shadow-md border-b border-amber-300/50 py-2.5 px-4 animate-banner-glow">
-        <div class="container mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
-            <div class="flex items-center justify-center sm:justify-start gap-2 text-xs sm:text-sm font-extrabold tracking-wide">
-                <span class="bg-white text-red-600 px-2.5 py-0.5 rounded-full text-[11px] font-black uppercase shadow-sm animate-bounce">
-                    ⚡ HURRY!
-                </span>
-                <span data-en="🔥 APPLY FAST! Limited Seats Available — Admissions Open Till 30th Sep Only!" data-mr="🔥 त्वरा करा! मर्यादित २५ जागा — ३० सप्टेंबरपर्यंतच प्रवेश अर्ज उघडे आहेत!">
-                    🔥 APPLY FAST! Limited Seats Available — Admissions Open Till 30th Sep Only!
-                </span>
-            </div>
-            <a href="admission.html#admissionFormCard" class="bg-amber-300 hover:bg-amber-200 text-slate-950 font-black text-xs px-5 py-1.5 rounded-full shadow-md transition-all transform hover:scale-105 flex items-center gap-1.5 animate-pulse uppercase tracking-wider whitespace-nowrap">
-                <i class="fa-solid fa-fire text-red-600"></i>
-                <span data-en="Apply For Admission Now" data-mr="आजच प्रवेश अर्ज भरा">Apply For Admission Now</span> &rarr;
-            </a>
-        </div>
-    </div>
-
     <!-- PAGE HEADER -->
-    <section class="bg-gradient-to-b from-brand-900 to-brand-950 text-white py-10">
+    <section class="bg-gradient-to-b from-brand-900 to-brand-950 text-white py-12 reveal">
         <div class="container mx-auto px-4 text-center max-w-3xl space-y-3">
             <span class="text-amber-400 font-extrabold text-xs uppercase tracking-widest bg-brand-800 px-3.5 py-1 rounded-full border border-brand-700">Manohar Vasudha Foundation</span>
             <h1 class="text-3xl sm:text-4xl font-extrabold" data-en="About Naturopathy & Yoga Diploma" data-mr="निसर्गोपचार व योग अभ्यासक्रमाविषयी सविस्तर">About Naturopathy & Yoga Diploma</h1>
-            <p class="text-emerald-200 text-sm font-bold">
+            <p class="text-emerald-200 text-sm font-semibold">
                 MSBVE Recognized 1-Year Professional Certification | Course Code: 201208
             </p>
         </div>
     </section>
 
     <!-- MAIN ABOUT CONTENT -->
-    <section class="py-12 bg-white">
-        <div class="container mx-auto px-4 space-y-12">
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 space-y-16">
             
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                <div class="lg:col-span-7 space-y-4">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                <div class="lg:col-span-7 space-y-4 reveal-left">
                     <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900" data-en="Our Vision: Disease-Free Living Through Natural Cure" data-mr="आमचे ध्येय: निसर्गोपचाराद्वारे निरोगी व सुदृढ समाज">
                         Our Vision: Disease-Free Living Through Natural Cure
                     </h2>
-                    <p class="text-slate-700 text-sm sm:text-base leading-relaxed font-medium" data-en="Manohar Vasudha Foundation was established with the noble objective of creating skilled naturopaths and yoga therapists. Led by experienced Ayurvedic doctors and wellness experts, the foundation bridges ancient Indian Panchmahabhuta healing with modern clinical diagnostics." data-mr="मनोहर वसुधा फाउंडेशनची स्थापना समाजात निसर्गोपचार व योगाचा प्रसार करून लोकांना निरोगी बनवणे आणि स्वावलंबी रोजगाराच्या संधी निर्माण करणे या उद्देशाने झाली आहे.">
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed font-medium" data-en="Manohar Vasudha Foundation was established with the noble objective of creating skilled naturopaths and yoga therapists. Led by experienced Ayurvedic doctors and wellness experts, the foundation bridges ancient Indian Panchmahabhuta healing with modern clinical diagnostics." data-mr="मनोहर वसुधा फाउंडेशनची स्थापना समाजात निसर्गोपचार व योगाचा प्रसार करून लोकांना निरोगी बनवणे आणि स्वावलंबी रोजगाराच्या संधी निर्माण करणे या उद्देशाने झाली आहे.">
                         Manohar Vasudha Foundation was established with the noble objective of creating skilled naturopaths and yoga therapists. Led by experienced Ayurvedic doctors and wellness experts, the foundation bridges ancient Indian Panchmahabhuta healing with modern clinical diagnostics.
                     </p>
-                    <p class="text-slate-700 text-sm leading-relaxed font-medium" data-en="Our 1-year diploma is officially recognized by the Maharashtra State Board of Vocational Education Examination (MSBVE), Mumbai. The curriculum emphasizes 6 hours of weekly theory alongside 18 hours of intensive practical lab and clinical internship training." data-mr="महाराष्ट्र शासन मान्यताप्राप्त अभ्यासक्रमामध्ये थिअरी सोबतच प्रत्यक्ष क्लिनिकल प्रात्यक्षिकावर विशेष भर दिला जातो.">
+                    <p class="text-slate-600 text-sm leading-relaxed font-medium" data-en="Our 1-year diploma is officially recognized by the Maharashtra State Board of Vocational Education Examination (MSBVE), Mumbai. The curriculum emphasizes 6 hours of weekly theory alongside 18 hours of intensive practical lab and clinical internship training." data-mr="महाराष्ट्र शासन मान्यताप्राप्त अभ्यासक्रमामध्ये थिअरी सोबतच प्रत्यक्ष क्लिनिकल प्रात्यक्षिकावर विशेष भर दिला जातो.">
                         Our 1-year diploma is officially recognized by the Maharashtra State Board of Vocational Education Examination (MSBVE), Mumbai. The curriculum emphasizes 6 hours of weekly theory alongside 18 hours of intensive practical lab training.
                     </p>
                 </div>
-                <div class="lg:col-span-5 bg-brand-50 p-6 rounded-3xl border border-brand-200 space-y-4 shadow-sm">
+                <div class="lg:col-span-5 bg-slate-50 p-6 sm:p-8 rounded-3xl border border-slate-200 space-y-4 shadow-sm reveal-right">
                     <div class="flex items-center gap-3">
                         <div class="w-12 h-12 rounded-full bg-brand-600 text-white flex items-center justify-center text-xl font-bold">
                             <i class="fa-solid fa-award"></i>
@@ -170,7 +153,7 @@
                             <p class="text-xs text-brand-700 font-bold">Course Code: 201208</p>
                         </div>
                     </div>
-                    <ul class="space-y-2 text-xs text-slate-800 font-bold">
+                    <ul class="space-y-2.5 text-xs text-slate-700 font-semibold">
                         <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Government Recognized Certificate</li>
                         <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Eligibility: Minimum S.S.C / 10th Pass</li>
                         <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Duration: 1 Year (Part Time)</li>
@@ -180,19 +163,19 @@
             </div>
 
             <!-- CTA Banner -->
-            <div class="bg-gradient-to-r from-red-600 via-amber-600 to-red-700 text-white rounded-3xl p-6 sm:p-8 shadow-xl flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="bg-gradient-to-r from-brand-700 via-brand-800 to-brand-900 text-white rounded-3xl p-8 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 reveal-zoom">
                 <div class="space-y-1 text-center md:text-left">
                     <h3 class="text-2xl font-black">Admissions Closing on 30th September 2026!</h3>
-                    <p class="text-amber-100 text-xs sm:text-sm font-medium">Don't miss the opportunity to learn from Ayurvedic Doctors. Minimum S.S.C pass required.</p>
+                    <p class="text-amber-200 text-xs sm:text-sm font-medium">Don't miss the opportunity to learn from Ayurvedic Doctors. Minimum S.S.C pass required.</p>
                 </div>
-                <a href="admission.html#admissionFormCard" class="bg-white text-red-700 font-black px-7 py-3 rounded-xl shadow hover:bg-amber-100 transition text-sm whitespace-nowrap">
+                <a href="admission.html#admissionFormCard" class="bg-amber-400 hover:bg-amber-300 text-slate-950 font-black px-8 py-3.5 rounded-2xl shadow transition text-sm whitespace-nowrap">
                     Fill Admission Form &rarr;
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER WITH HIGH-CONTRAST DARK BACKGROUND & BRIGHT LINKS -->
+    <!-- FOOTER -->
     <footer id="contact" class="bg-slate-900 text-slate-100 pt-12 pb-8 border-t border-slate-800">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
